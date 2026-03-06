@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solverita | Funkční IT pod kontrolou</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Lexend+Deca:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #0f172a; color: white; scroll-behavior: smooth; }
+        h1, h2, h3, .font-lexend { font-family: 'Lexend Deca', sans-serif; }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .glass-hover:hover { background: rgba(255, 255, 255, 0.08); border-color: rgba(0, 234, 154, 0.5); transform: translateY(-3px); }
+        .gradient-text { background: linear-gradient(90deg, #00ea9a, #00a9ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .btn-gradient { background: linear-gradient(135deg, #00ea9a 0%, #00a9ff 100%); transition: all 0.3s ease; }
+        .btn-gradient:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -10px #00ea9a; opacity: 0.9; }
+        .service-card:hover { border-color: #00ea9a; background: rgba(255, 255, 255, 0.05); }
+        .logo-grid img { filter: grayscale(100%) brightness(200%); opacity: 0.6; transition: all 0.4s; }
+        .logo-grid img:hover { filter: grayscale(0%) brightness(100%); opacity: 1; transform: scale(1.1); }
+        
+        /* Portfolio image hover */
+        .portfolio-img { transition: transform 0.5s ease, filter 0.5s ease; filter: grayscale(30%) brightness(80%); }
+        .portfolio-item:hover .portfolio-img { transform: scale(1.05); filter: grayscale(0%) brightness(100%); }
+
+        /* Skrytí sekcí pro simulaci SPA */
+        .page-content { display: none; opacity: 0; transition: opacity 0.4s ease; }
+        .page-content.active { display: block; opacity: 1; }
+        
+        /* Tabulka */
+        .custom-table th { background: rgba(255,255,255,0.05); color: #00ea9a; }
+        .custom-table tr { border-bottom: 1px solid rgba(255,255,255,0.05); }
+        .custom-table tr:last-child { border-bottom: none; }
+    </style>
+</head>
+<body>
+
+    <!-- Navigace -->
+    <nav class="fixed w-full z-50 px-4 md:px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center glass rounded-2xl px-6 py-3">
+            <div class="flex items-center gap-3 cursor-pointer" onclick="showPage('home')">
+                <img src="Logo Solverita_black.png" alt="Solverita znak" class="h-8 w-auto">
+                <span class="text-xl font-bold tracking-tight uppercase text-white">Solverita</span>
+            </div>
+            <div class="hidden lg:flex gap-6 xl:gap-8 text-sm font-medium items-center">
+                <a href="#pristup" onclick="showPage('home')" class="hover:text-[#00ea9a] transition">Náš přístup</a>
+                <a href="#sluzby" onclick="showPage('home')" class="hover:text-[#00ea9a] transition">Co řešíme</a>
+                <a href="#case-studies" onclick="showPage('home')" class="hover:text-[#00ea9a] transition">Case Studies</a>
+                <a href="#portfolio" onclick="showPage('home')" class="hover:text-[#00ea9a] transition">Portfolio</a>
+                <a href="#kontakt" onclick="showPage('home')" class="hover:text-[#00ea9a] transition">Kontakt</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://eshop.solverita.cz/" class="hidden sm:block text-sm border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10 transition">🛒 Eshop</a>
+                <button class="lg:hidden text-[#00ea9a]">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================== -->
+    <!-- HOME PAGE CONTENT                          -->
+    <!-- ========================================== -->
+    <main id="home-page" class="page-content active">
+        
+        <!-- Hero Sekce -->
+        <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full opacity-20 pointer-events-none">
+                <div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[#00ea9a] rounded-full blur-[150px]"></div>
+                <div class="absolute bottom-1/4 right-1/4 w-[500px] h-[500px] bg-[#00a9ff] rounded-full blur-[150px]"></div>
+            </div>
+
+            <div class="relative max-w-5xl mx-auto px-6 text-center">
+                <div class="inline-block px-4 py-1 rounded-full border border-[#00ea9a]/30 text-[#00ea9a] text-xs font-bold mb-6 tracking-widest uppercase">Konec IT jako černé díry na peníze</div>
+                <h1 class="text-5xl md:text-8xl font-bold mb-6 leading-tight">
+                    Méně výpadků. <br><span class="gradient-text">Plná kontrola.</span>
+                </h1>
+                <p class="text-lg md:text-2xl text-slate-400 mb-10 max-w-3xl mx-auto font-light">
+                    Nehrajeme si na buzzwords. Řešíme skutečné IT problémy z podstaty věci. Rychle, transparentně a tak, abyste přesně věděli, za co platíte.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="#kontakt" onclick="showPage('home')" class="btn-gradient px-10 py-5 rounded-2xl font-bold text-slate-900 text-lg">Probrat vaše IT</a>
+                    <a href="#pristup" onclick="showPage('home')" class="bg-white/5 hover:bg-white/10 border border-white/10 px-10 py-5 rounded-2xl font-bold transition text-lg">Jak to děláme jinak</a>
+                </div>
+            </div>
+            
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-30">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7-7-7m14-8l-7 7-7-7"></path></svg>
+            </div>
+        </section>
+
+        <!-- Přístup -->
+        <section id="pristup" class="py-24 max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold text-[#00ea9a] uppercase tracking-[0.3em] mb-4">Náš přístup</h2>
+                <h3 class="text-4xl md:text-5xl font-bold italic">IT překládáme do lidské řeči.</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-10 rounded-[32px] border-l-4 border-l-[#00ea9a]">
+                    <h4 class="text-2xl font-bold mb-3">Kontrola nad požadavky a náklady</h4>
+                    <p class="text-slate-400 text-lg">Žádné překvapivé faktury na konci měsíce. U každého požadavku předem víte, kolik času a peněz bude stát. Transparentnost je pro nás základ, ne benefit. IT rozpočet máte plně ve svých rukou.</p>
+                </div>
+                <div class="glass p-10 rounded-[32px] border-l-4 border-l-[#00a9ff]">
+                    <h4 class="text-2xl font-bold mb-3">Minimalizace incidentů a rychlost</h4>
+                    <p class="text-slate-400 text-lg">Nejlepší IT podpora je ta, kterou vůbec nepotřebujete. Zaměřujeme se na prevenci a odstraňování příčin, ne jen na hašení požárů. A když už něco "spadne", reagujeme okamžitě.</p>
+                </div>
+                <div class="glass p-10 rounded-[32px] border-l-4 border-l-white">
+                    <h4 class="text-2xl font-bold mb-3">Myslíme za vás</h4>
+                    <p class="text-slate-400 text-lg">Nečekáme pasivně na zadání. Sami přicházíme s návrhy, jak věci zjednodušit, zabezpečit nebo zlevnit. Technologie mají sloužit vašemu byznysu, ne naopak. My se staráme o IT, vy o růst firmy.</p>
+                </div>
+                <div class="glass p-10 rounded-[32px] bg-gradient-to-br from-white/5 to-transparent">
+                    <h4 class="text-2xl font-bold mb-3">Řešení z podstaty problému</h4>
+                    <p class="text-slate-400 text-lg">Nenutíme vám nejdražší enterprise systémy, pokud pro ně nemáte využití. Hledáme reálnou podstatu toho, co potřebujete vyřešit, a navrhneme technologii, která dává ekonomický smysl.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Služby -->
+        <section id="sluzby" class="py-24 bg-slate-900/50">
+            <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+                <h2 class="text-4xl md:text-6xl font-bold mb-4">Co pro vás <span class="gradient-text">zajistíme</span></h2>
+                <p class="text-slate-400 max-w-2xl mx-auto text-lg">Od hladkého běhu kanceláře po zabezpečení dat. Vše s jasnou cenovkou.</p>
+            </div>
+
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="service-card glass p-10 rounded-[32px] transition duration-300 flex flex-col h-full border-white/5">
+                    <div class="text-4xl mb-6">⚙️</div>
+                    <h3 class="text-2xl font-bold mb-4">Převzetí IT správy</h3>
+                    <p class="text-slate-400 mb-8 flex-grow">Kompletní péče o stanice, sítě a servery. Vyřešíme onboarding nováčků, support uživatelů i monitoring systémů dřív, než si problému všimnete.</p>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-[#00ea9a] rounded-full"></div> Microsoft 365 / Google Workspace</li>
+                        <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-[#00ea9a] rounded-full"></div> Helpdesk s jasným SLA</li>
+                        <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-[#00ea9a] rounded-full"></div> Proaktivní údržba</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass p-10 rounded-[32px] transition duration-300 flex flex-col h-full border-white/5">
+                    <div class="text-4xl mb-6">🛡️</div>
+                    <h3 class="text-2xl font-bold mb-4">Funkční bezpečnost</h3>
+                    <p class="text-slate-400 mb-8 flex-grow">Žádné stohy papírů do šuplíku. Implementujeme reálná zabezpečení, která vaši firmu skutečně ochrání před aktuálními hrozbami a ztrátou dat.</p>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-[#00a9ff] rounded-full"></div> Palo Alto & Fortinet</li>
+                        <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-[#00a9ff] rounded-full"></div> Bezpečné zálohování</li>
+                        <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-[#00a9ff] rounded-full"></div> Ochrana proti Ransomware</li>
+                    </ul>
+                </div>
+
+                <div class="service-card glass p-10 rounded-[32px] transition duration-300 flex flex-col h-full border-white/5 cursor-pointer" onclick="showPage('proxmox')">
+                    <div class="text-4xl mb-6">☁️</div>
+                    <h3 class="text-2xl font-bold mb-4 group-hover:text-[#00ea9a] transition">Nezávislý Cloud (Proxmox)</h3>
+                    <p class="text-slate-400 mb-8 flex-grow">Alternativa k drahým korporátním licencím (VMware). Získáte výkonnou a stabilní infrastrukturu bez toho, abyste platili nesmyslné poplatky.</p>
+                    <ul class="space-y-3 text-sm text-slate-300">
+                        <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-white rounded-full"></div> Snížení licenčních nákladů</li>
+                        <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-white rounded-full"></div> Plynulá migrace provozu</li>
+                        <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-white rounded-full"></div> Zobrazit případovou studii →</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Case Studies -->
+        <section id="case-studies" class="py-24 max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold text-[#00ea9a] uppercase tracking-[0.3em] mb-4">Naše realizace</h2>
+                <h3 class="text-4xl md:text-5xl font-bold italic">Case <span class="gradient-text">Studies</span>.</h3>
+                <p class="text-slate-400 mt-4 max-w-2xl mx-auto">Reálné projekty a problémy, které jsme pro naše klienty vyřešili z podstaty věci.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="#" class="glass glass-hover p-8 rounded-3xl flex flex-col group transition-all duration-300">
+                    <div class="w-12 h-12 bg-[#00ea9a]/10 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-[#00ea9a]/20 transition-colors">📹</div>
+                    <h4 class="text-xl font-bold mb-3">Videokonference</h4>
+                    <p class="text-slate-400 text-sm mb-6 flex-grow">Komplexní návrhy a dodávky videokonferenčních řešení pro bezproblémové hybridní schůzky. Od malých huddle rooms po velké zasedačky.</p>
+                    <div class="text-[#00ea9a] text-sm font-bold flex items-center gap-2">Připravujeme <span class="group-hover:translate-x-1 transition-transform">→</span></div>
+                </a>
+
+                <a href="#" class="glass glass-hover p-8 rounded-3xl flex flex-col group transition-all duration-300">
+                    <div class="w-12 h-12 bg-[#00a9ff]/10 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-[#00a9ff]/20 transition-colors">🖥️</div>
+                    <h4 class="text-xl font-bold mb-3">IT správa</h4>
+                    <p class="text-slate-400 text-sm mb-6 flex-grow">Příběhy firem, kde jsme převzali IT z rukou "ajťáka, co nemá čas" a vytvořili stabilní, předvídatelné a bezpečné prostředí.</p>
+                    <div class="text-[#00ea9a] text-sm font-bold flex items-center gap-2">Připravujeme <span class="group-hover:translate-x-1 transition-transform">→</span></div>
+                </a>
+
+                <!-- PROXMOX CASE STUDY LINK -->
+                <a href="#" onclick="event.preventDefault(); showPage('proxmox')" class="glass glass-hover p-8 rounded-3xl flex flex-col group transition-all duration-300 border-[#00ea9a]/30">
+                    <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-white/20 transition-colors">☁️</div>
+                    <h4 class="text-xl font-bold mb-3">Proxmox VE v průmyslu</h4>
+                    <p class="text-slate-400 text-sm mb-6 flex-grow">Jak jsme klientům ušetřili statisíce za enterprise licence úspěšnou migrací jejich datacenter do prostředí Proxmox VE.</p>
+                    <div class="text-[#00ea9a] text-sm font-bold flex items-center gap-2">Přečíst celou studii <span class="group-hover:translate-x-1 transition-transform">→</span></div>
+                </a>
+
+                <a href="#" class="glass glass-hover p-8 rounded-3xl flex flex-col group transition-all duration-300 lg:col-span-2">
+                    <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-purple-500/20 transition-colors">🎙️</div>
+                    <h4 class="text-xl font-bold mb-3">AV multifunkční sál</h4>
+                    <p class="text-slate-400 text-sm mb-6 flex-grow max-w-xl">Návrh a instalace prémiové audiovizuální techniky pro velké reprezentační a multifunkční prostory, kde záleží na každém detailu obrazu a zvuku.</p>
+                    <div class="text-[#00ea9a] text-sm font-bold flex items-center gap-2">Připravujeme <span class="group-hover:translate-x-1 transition-transform">→</span></div>
+                </a>
+
+                <a href="#" class="glass glass-hover p-8 rounded-3xl flex flex-col group transition-all duration-300">
+                    <div class="w-12 h-12 bg-orange-500/10 rounded-xl flex items-center justify-center text-2xl mb-6 group-hover:bg-orange-500/20 transition-colors">💻</div>
+                    <h4 class="text-xl font-bold mb-3">Instalace monitorů</h4>
+                    <p class="text-slate-400 text-sm mb-6 flex-grow">Rozsáhlé logistické a implementační projekty hromadné výměny a instalace pracovních stanic a multimonitorových pracovišť.</p>
+                    <div class="text-[#00ea9a] text-sm font-bold flex items-center gap-2">Připravujeme <span class="group-hover:translate-x-1 transition-transform">→</span></div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Portfolio sekce -->
+        <section id="portfolio" class="py-24 bg-slate-900/80 border-t border-b border-white/5">
+            <div class="max-w-7xl mx-auto px-6">
+                <div class="text-center mb-16">
+                    <h2 class="text-sm font-bold text-[#00ea9a] uppercase tracking-[0.3em] mb-4">Portfolio</h2>
+                    <h3 class="text-4xl md:text-5xl font-bold italic">Ukázky našich <span class="gradient-text">instalací</span>.</h3>
+                </div>
+
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+                    <div class="portfolio-item overflow-hidden rounded-2xl md:rounded-3xl relative group cursor-pointer aspect-square md:col-span-2">
+                        <img src="https://images.unsplash.com/photo-1597852074816-d933c7d2b988?auto=format&fit=crop&q=80&w=1600&h=800" alt="Serverovna" class="portfolio-img w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 md:p-8">
+                            <div>
+                                <h4 class="text-white font-bold text-lg md:text-xl">Infrastruktura a Servery</h4>
+                                <p class="text-[#00ea9a] text-sm">Organizace kabeláže a instalace racků</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="portfolio-item overflow-hidden rounded-2xl md:rounded-3xl relative group cursor-pointer aspect-square">
+                        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=800&h=800" alt="Pracovní stanice" class="portfolio-img w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white font-bold text-lg">Pracovní stanice</h4>
+                                <p class="text-[#00a9ff] text-sm">Setup koncových zařízení</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item overflow-hidden rounded-2xl md:rounded-3xl relative group cursor-pointer aspect-square">
+                        <img src="https://images.unsplash.com/photo-1662998638421-50e5ff30ba55?auto=format&fit=crop&q=80&w=800&h=800" alt="Zasedací místnost" class="portfolio-img w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                            <div>
+                                <h4 class="text-white font-bold text-lg">AV Technika</h4>
+                                <p class="text-[#00ea9a] text-sm">Videokonferenční sály</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-item overflow-hidden rounded-2xl md:rounded-3xl relative group cursor-pointer aspect-square md:col-span-2">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1600&h=800" alt="Kabeláž" class="portfolio-img w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/90 via-slate-900/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6 md:p-8">
+                            <div>
+                                <h4 class="text-white font-bold text-lg md:text-xl">Síťové prvky</h4>
+                                <p class="text-[#00a9ff] text-sm">Zapojení aktivních i pasivních prvků sítě</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reference Grid -->
+        <section id="reference" class="py-24 max-w-7xl mx-auto px-6">
+            <h2 class="text-center text-slate-500 uppercase tracking-[0.4em] text-xs mb-16">Kdo už má IT pod kontrolou</h2>
+            <div class="logo-grid grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-12 gap-y-16 items-center justify-items-center opacity-80">
+                <img src="https://www.solverita.cz/wp-content/uploads/2025/09/Penta.png" alt="Penta" class="h-8">
+                <img src="https://www.solverita.cz/wp-content/uploads/2025/12/ct-velke-1.webp" alt="Česká televize" class="h-10">
+                <img src="https://www.solverita.cz/wp-content/uploads/2025/07/yusen-logistics-logo-vector-pruhledny-1-.png" alt="Yusen" class="h-8">
+                <img src="https://www.solverita.cz/wp-content/uploads/2025/01/pudis_web.png" alt="Pudis" class="h-10">
+                <img src="https://www.solverita.cz/wp-content/uploads/2022/10/solverita_tesla.png" alt="Tesla" class="h-10">
+                <img src="https://www.solverita.cz/wp-content/uploads/2025/12/abc-1.webp" alt="ABC" class="h-8">
+            </div>
+        </section>
+        
+        <!-- Kontakt -->
+        <section id="kontakt" class="py-32 relative border-t border-white/5">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="text-5xl md:text-7xl font-bold mb-6 italic">Udělejte si v IT <span class="gradient-text">pořádek.</span></h2>
+                <p class="text-xl text-slate-400 mb-12">Rádi s vámi nezávazně probereme, kde vám utíkají peníze a proč věci nefungují tak rychle, jak by mohly.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 text-left">
+                    <div class="glass p-8 rounded-3xl">
+                        <p class="text-[#00ea9a] text-xs uppercase font-bold tracking-widest mb-2">Kde nás najdete</p>
+                        <p class="text-xl font-bold">Ocelářská 981/16, Praha 9</p>
+                        <p class="text-slate-400 mt-1">Stavíme se u vás, nebo dorazte k nám na kávu.</p>
+                    </div>
+                    <div class="glass p-8 rounded-3xl">
+                        <p class="text-[#00a9ff] text-xs uppercase font-bold tracking-widest mb-2">Ozvěte se</p>
+                        <p class="text-xl font-bold">+420 235 323 140</p>
+                        <p class="text-slate-400">poptavka@solverita.cz</p>
+                    </div>
+                </div>
+
+                <div class="max-w-2xl mx-auto">
+                    <button onclick="toggleContactForm()" class="btn-gradient w-full py-6 rounded-3xl font-bold text-slate-900 text-xl shadow-xl shadow-[#00ea9a]/20">Sjednat nezávaznou konzultaci</button>
+                    
+                    <div id="contact-success" class="hidden mt-8 p-6 glass border-[#00ea9a] text-[#00ea9a] rounded-3xl">
+                        <p class="font-bold text-lg">Rozumíme!</p>
+                        <p class="text-sm opacity-80 mt-2">Děkujeme za zájem. Během krátké chvíle se vám ozveme zpět a domluvíme detaily.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========================================== -->
+    <!-- PROXMOX CASE STUDY PAGE                    -->
+    <!-- ========================================== -->
+    <main id="proxmox-page" class="page-content min-h-screen pt-32 pb-24">
+        
+        <!-- Hero Studie -->
+        <section class="max-w-4xl mx-auto px-6 text-center mb-24">
+            <div class="inline-block px-4 py-1 rounded-full border border-[#00ea9a]/30 text-[#00ea9a] text-xs font-bold mb-6 tracking-widest uppercase cursor-pointer hover:bg-[#00ea9a]/10 transition" onclick="showPage('home')">← Zpět na přehled</div>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Proxmox VE v <span class="gradient-text">průmyslové výrobě</span></h1>
+            <p class="text-xl text-slate-400">Nezávislost a spolehlivost pro 24/7 provoz bez drastických licenčních poplatků. Jak jsme nahradili starý VMware.</p>
+        </section>
+
+        <!-- Bolesti a Situace -->
+        <section class="max-w-7xl mx-auto px-6 mb-24">
+            <h2 class="text-3xl font-bold mb-8 text-center">Výchozí stav & Bolesti staré infrastruktury</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass p-10 rounded-3xl">
+                    <h3 class="text-xl font-bold text-[#00a9ff] mb-4 border-b border-white/10 pb-4">Finanční neudržitelnost (Vendor Lock-in)</h3>
+                    <p class="text-slate-400">Společnost dlouhodobě čelila výraznému riziku. Náklady na prodlužování licencí platformy VMware exponenciálně rostly, čímž vysávaly IT rozpočet, který chyběl pro další inovace a bezpečnost.</p>
+                </div>
+                <div class="glass p-10 rounded-3xl">
+                    <h3 class="text-xl font-bold text-[#00ea9a] mb-4 border-b border-white/10 pb-4">Hardwarová rigidita</h3>
+                    <p class="text-slate-400">Závažný výpadek starého serveru (vadný řadič) ukázal křehkost postupně nabalované infrastruktury. Bylo nutné pořídit nový hardware a zavést ucelený, centralizovaný koncept pro bezpečný 24/7 provoz.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Řešení text a parametry -->
+        <section class="max-w-7xl mx-auto px-6 mb-24 bg-slate-900/50 py-16 rounded-[40px] border border-white/5">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center px-6 lg:px-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">Řešení: Modernizace na Proxmox VE</h2>
+                    <p class="text-slate-400 mb-6 text-lg">Místo nákupu drahých enterprise licencí jsme zvolili přechod na masivně populární open-source podnikovou platformu <strong>Proxmox VE</strong>, postavenou na stabilním Debian Linuxu.</p>
+                    <p class="text-slate-400 mb-8 text-lg">Proxmox v sobě nativně spojuje plnohodnotné virtuální stroje (KVM) a efektivní linuxové kontejnery (LXC). Celé prostředí je sjednoceno pod přehledným webovým rozhraním, díky kterému získal lokální IT tým dokonalý přehled.</p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mt-10">
+                        <div class="border-l-4 border-[#00ea9a] pl-6">
+                            <div class="text-4xl font-bold text-white mb-1">24/7</div>
+                            <div class="text-sm text-slate-400 uppercase tracking-wide">Nepřetržitý provoz</div>
+                        </div>
+                        <div class="border-l-4 border-[#00a9ff] pl-6">
+                            <div class="text-4xl font-bold text-white mb-1">0 Kč</div>
+                            <div class="text-sm text-slate-400 uppercase tracking-wide">Roční licence Proxmox</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-3xl overflow-hidden border border-white/10 aspect-video lg:aspect-square relative">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800&h=800" alt="Server rack infrastructure" class="object-cover w-full h-full grayscale opacity-60">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-[#00ea9a]/20 to-[#00a9ff]/20 mix-blend-overlay"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HW Tabulka -->
+        <section class="max-w-5xl mx-auto px-6 mb-24">
+            <h2 class="text-3xl font-bold mb-8 text-center">Hardwarová specifikace (DELL)</h2>
+            <div class="glass rounded-3xl overflow-hidden">
+                <table class="w-full text-left custom-table">
+                    <thead>
+                        <tr>
+                            <th class="p-6 font-bold text-lg">Komponenta</th>
+                            <th class="p-6 font-bold text-lg">Specifikace řešení</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-slate-300">
+                        <tr>
+                            <td class="p-6 font-bold text-white">Server Node</td>
+                            <td class="p-6">DELL PowerEdge R550</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 font-bold text-white">Výpočetní výkon</td>
+                            <td class="p-6">2x Intel Xeon Silver 4309Y (Celkem 16 fyzických / 32 logických jader)</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 font-bold text-white">Operační paměť</td>
+                            <td class="p-6">DDR4-2666 s ECC korekcí chyb</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 font-bold text-white">Bootovací Storage</td>
+                            <td class="p-6">Karta BOSS-S2 s 2x M.2 (240GB) zapojené v hardwarovém RAID 1</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 font-bold text-white">Hlavní Data Storage</td>
+                            <td class="p-6">ZFS Mirror nad SATA SSD (960GB pro OS) a SATA HDD (4TB pro objemná data)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SW a Bezpečnost -->
+        <section class="max-w-7xl mx-auto px-6 mb-24">
+            <h2 class="text-3xl font-bold mb-12 text-center">Softwarový & Bezpečnostní Stack</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass p-8 rounded-3xl">
+                    <div class="text-4xl mb-6">💾</div>
+                    <h3 class="text-xl font-bold mb-3">ZFS Filesystem</h3>
+                    <p class="text-slate-400 text-sm">Upustili jsme od klasických HW RAID řadičů ve prospěch softwarového ZFS. Nativně chrání data proti poškození (bit rot) a nabízí extrémní výkon pro databáze s bleskovými snapshoty.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl">
+                    <div class="text-4xl mb-6">🛡️</div>
+                    <h3 class="text-xl font-bold mb-3">Proxmox Backup</h3>
+                    <p class="text-slate-400 text-sm">Nasazen nativní Proxmox Backup Server (PBS). Umožňuje plně přírůstkové zálohování s deduplikací. To masivně šetří místo na disku a RTO (doba obnovy) se zkrátila na jednotky minut.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl">
+                    <div class="text-4xl mb-6">📈</div>
+                    <h3 class="text-xl font-bold mb-3">Monitoring (Zabbix)</h3>
+                    <p class="text-slate-400 text-sm">Nasadili jsme Zabbix agenty napříč celou sítí ve spojení s DELL iDRAC pro out-of-band dohled. O blížícím se problému s diskem víme dřív, než ohrozí chod produkce.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- TCO Graf -->
+        <section class="max-w-4xl mx-auto px-6 mb-24">
+            <h2 class="text-3xl font-bold mb-4 text-center">Srovnání TCO (VMware vs Proxmox)</h2>
+            <p class="text-center text-slate-400 mb-12 max-w-2xl mx-auto">Zatímco u starého řešení rostou náklady na licence exponenciálně, u Proxmoxu se investuje pouze do HW a úvodní implementace.</p>
+            
+            <div class="glass p-8 md:p-12 rounded-[40px] space-y-8">
+                <!-- Rok 1 -->
+                <div class="space-y-3">
+                    <div class="flex items-center gap-4">
+                        <div class="w-32 md:w-40 text-sm font-bold text-slate-400 text-right">Rok 1 (VMware)</div>
+                        <div class="flex-grow bg-white/5 rounded-full h-8 relative overflow-hidden">
+                            <div class="absolute top-0 left-0 h-full bg-rose-600 w-[30%] rounded-full flex items-center justify-end px-4 text-xs font-bold">300K</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-32 md:w-40 text-sm font-bold text-white text-right">Rok 1 (Proxmox)</div>
+                        <div class="flex-grow bg-white/5 rounded-full h-8 relative overflow-hidden">
+                            <div class="absolute top-0 left-0 h-full bg-[#00ea9a] w-[35%] rounded-full flex items-center justify-end px-4 text-xs font-bold text-slate-900">350K (HW + Práce)</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rok 3 -->
+                <div class="space-y-3 pt-4 border-t border-white/10">
+                    <div class="flex items-center gap-4">
+                        <div class="w-32 md:w-40 text-sm font-bold text-slate-400 text-right">Rok 3 (VMware)</div>
+                        <div class="flex-grow bg-white/5 rounded-full h-8 relative overflow-hidden">
+                            <div class="absolute top-0 left-0 h-full bg-rose-600 w-[70%] rounded-full flex items-center justify-end px-4 text-xs font-bold">700K (Licence)</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-32 md:w-40 text-sm font-bold text-white text-right">Rok 3 (Proxmox)</div>
+                        <div class="flex-grow bg-white/5 rounded-full h-8 relative overflow-hidden">
+                            <div class="absolute top-0 left-0 h-full bg-[#00ea9a] w-[35%] rounded-full flex items-center justify-end px-4 text-xs font-bold text-slate-900">350K (Pevné)</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Rok 5 -->
+                <div class="space-y-3 pt-4 border-t border-white/10">
+                    <div class="flex items-center gap-4">
+                        <div class="w-32 md:w-40 text-sm font-bold text-slate-400 text-right">Rok 5 (VMware)</div>
+                        <div class="flex-grow bg-white/5 rounded-full h-8 relative overflow-hidden">
+                            <div class="absolute top-0 left-0 h-full bg-rose-600 w-[100%] rounded-full flex items-center justify-end px-4 text-xs font-bold">1.1M+ (Licence)</div>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="w-32 md:w-40 text-sm font-bold text-white text-right">Rok 5 (Proxmox)</div>
+                        <div class="flex-grow bg-white/5 rounded-full h-8 relative overflow-hidden">
+                            <div class="absolute top-0 left-0 h-full bg-[#00ea9a] w-[35%] rounded-full flex items-center justify-end px-4 text-xs font-bold text-slate-900">350K (Pevné)</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hlavní benefity -->
+        <section class="max-w-5xl mx-auto px-6 mb-24">
+            <div class="glass p-10 md:p-16 rounded-[40px]">
+                <h2 class="text-3xl font-bold mb-10 border-b border-white/10 pb-6">Hlavní benefity řešení z pohledu byznysu</h2>
+                <ul class="space-y-6">
+                    <li class="flex gap-4 items-start">
+                        <div class="text-2xl mt-1">💰</div>
+                        <div>
+                            <strong class="text-white text-lg block mb-1">Absolutní nákladová efektivita</strong>
+                            <p class="text-slate-400">Klient se definitivně zbavil vysokých a neustále rostoucích licenčních poplatků. Získaný rozpočet mohl investovat do lepšího hardwaru a vyšší bezpečnosti sítě.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                        <div class="text-2xl mt-1">🔓</div>
+                        <div>
+                            <strong class="text-white text-lg block mb-1">Konec vendor lock-inu</strong>
+                            <p class="text-slate-400">Díky open-source základu a integraci univerzálních formátů je klient plně nezávislý na licenční politice jedné korporace.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                        <div class="text-2xl mt-1">⏱️</div>
+                        <div>
+                            <strong class="text-white text-lg block mb-1">Rychlost obnovy v minutách</strong>
+                            <p class="text-slate-400">Pokud selže virtuální server, jede z nové zálohy díky PBS deduplikaci dříve, než to výroba stihne pocítit.</p>
+                        </div>
+                    </li>
+                    <li class="flex gap-4 items-start">
+                        <div class="text-2xl mt-1">🚀</div>
+                        <div>
+                            <strong class="text-white text-lg block mb-1">Připraveno na růst</strong>
+                            <p class="text-slate-400">Pokud firmě přestane stačit jeden node, jednoduše dokoupíme další a vytvoříme High-Availability cluster bez výpadků výroby.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- CTA Závěr -->
+        <section class="max-w-3xl mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 italic">Chcete také uniknout <span class="gradient-text">licenční pasti?</span></h2>
+            <p class="text-xl text-slate-400 mb-10">Pojďme probrat, jak bychom Proxmox VE a zlevnění IT integrovali přímo do vašeho prostředí.</p>
+            <button onclick="showPage('home'); setTimeout(() => { document.getElementById('kontakt').scrollIntoView({behavior: 'smooth'}) }, 100);" class="btn-gradient px-10 py-5 rounded-2xl font-bold text-slate-900 text-lg">Mám zájem o konzultaci</button>
+        </section>
+
+    </main>
+
+    <!-- Patička -->
+    <footer class="py-12 border-t border-white/5 text-slate-500">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition cursor-pointer" onclick="showPage('home')">
+                <img src="Logo Solverita_black.png" alt="Solverita znak" class="h-5 w-auto">
+                <span class="font-bold text-white text-base uppercase tracking-widest">Solverita</span>
+            </div>
+            <div class="flex gap-8 text-sm">
+                <a href="#" class="hover:text-white transition">GDPR</a>
+                <a href="#" class="hover:text-white transition">Kariéra</a>
+                <a href="https://www.linkedin.com/company/solverita/" class="hover:text-white transition">LinkedIn</a>
+            </div>
+            <p class="text-xs">© 2026 Solverita s.r.o. | Řešení z podstaty problému.</p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleContactForm() {
+            const msg = document.getElementById('contact-success');
+            msg.classList.remove('hidden');
+            msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // SPA Navigation logic
+        function showPage(pageId) {
+            // Skryje všechny stránky
+            document.querySelectorAll('.page-content').forEach(el => {
+                el.classList.remove('active');
+            });
+            
+            // Zobrazí vybranou stránku
+            const targetPage = document.getElementById(pageId + '-page');
+            if (targetPage) {
+                targetPage.classList.add('active');
+            }
+            
+            // Vyroluje nahoru
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
