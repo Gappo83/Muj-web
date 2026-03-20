@@ -129,14 +129,14 @@
 
             <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- 1. IT Správa -->
-                <div class="service-card glass p-10 rounded-[32px] transition duration-300 flex flex-col h-full border-white/5">
+                <div class="service-card glass p-10 rounded-[32px] transition duration-300 flex flex-col h-full border-white/5 cursor-pointer" onclick="showPage('it-sprava')">
                     <div class="text-4xl mb-6">⚙️</div>
-                    <h3 class="text-2xl font-bold mb-4">Převzetí IT správy</h3>
+                    <h3 class="text-2xl font-bold mb-4 group-hover:text-[#00ea9a] transition">Převzetí IT správy</h3>
                     <p class="text-slate-400 mb-8 flex-grow">Kompletní péče o stanice, sítě a servery. Vyřešíme onboarding nováčků, support uživatelů i monitoring systémů dřív, než si problému všimnete.</p>
                     <ul class="space-y-3 text-sm text-slate-300">
                         <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-[#00ea9a] rounded-full"></div> Microsoft 365 / Google Workspace</li>
                         <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-[#00ea9a] rounded-full"></div> Helpdesk s jasným SLA</li>
-                        <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-[#00ea9a] rounded-full"></div> Proaktivní údržba</li>
+                        <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-[#00ea9a] rounded-full"></div> Zobrazit případovou studii →</li>
                     </ul>
                 </div>
 
@@ -153,14 +153,14 @@
                 </div>
 
                 <!-- 4. Videokonference -->
-                <div class="service-card glass p-10 rounded-[32px] transition duration-300 flex flex-col h-full border-white/5">
+                <div class="service-card glass p-10 rounded-[32px] transition duration-300 flex flex-col h-full border-white/5 cursor-pointer" onclick="showPage('videokonference')">
                     <div class="text-4xl mb-6">🎥</div>
-                    <h3 class="text-2xl font-bold mb-4">Videokonference a AV</h3>
+                    <h3 class="text-2xl font-bold mb-4 group-hover:text-[#00ea9a] transition">Videokonference a AV</h3>
                     <p class="text-slate-400 mb-8 flex-grow">Změníme vaše zasedačky v místa, kde hybridní schůzky fungují na první kliknutí. Dokonalý obraz, čistý zvuk a absolutní spolehlivost.</p>
                     <ul class="space-y-3 text-sm text-slate-300">
-                        <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-[#00ea9a] rounded-full"></div> Logitech</li>
-                        <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-[#00ea9a] rounded-full"></div> HP Poly</li>
-                        <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-[#00ea9a] rounded-full"></div> Yealink</li>
+                        <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-[#00ea9a] rounded-full"></div> Logitech, HP Poly, Yealink</li>
+                        <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-[#00ea9a] rounded-full"></div> Multifunkční sály</li>
+                        <li class="flex items-center gap-2 font-medium"><div class="w-1.5 h-1.5 bg-[#00ea9a] rounded-full"></div> Zobrazit případovou studii →</li>
                     </ul>
                 </div>
 
@@ -264,107 +264,86 @@
 
                 <!-- MIKRO GALERIE - 4 sloupce na mobilu, 6 tablet, 8 menší ntb, 10 velký desktop -->
                 <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2 md:gap-3">
-                    
                     <!-- Fotka 1 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=1200', 'Pracovní stanice', 'Setup koncových zařízení')">
                         <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=400&h=400" alt="Pracovní stanice" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 2 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200', 'Serverovna HQ', 'Organizace kabeláže a instalace racků')">
                         <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=400&h=400" alt="Serverovna" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 3 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1662998638421-50e5ff30ba55?auto=format&fit=crop&q=80&w=1200', 'AV Technika', 'Videokonferenční sály')">
                         <img src="https://images.unsplash.com/photo-1662998638421-50e5ff30ba55?auto=format&fit=crop&q=80&w=400&h=400" alt="Zasedací místnost" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 4 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=1200', 'Síťové prvky', 'Zapojení aktivních prvků sítě')">
                         <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=400&h=400" alt="Kabeláž" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 5 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200', 'Datacentrum', 'Pravidelná údržba a monitoring')">
                         <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400&h=400" alt="Datacentrum" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 6 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=1200', 'Meeting Room', 'Modernizace akustiky a obrazu')">
                         <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=400&h=400" alt="Meeting Room" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 7 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=1200', 'Kancelářské PC', 'Hromadné instalace stanic')">
                         <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=400&h=400" alt="Kancelářské PC" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 8 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1551703599-6b3e8379aa8b?auto=format&fit=crop&q=80&w=1200', 'Switch & Router', 'Konfigurace firemní sítě')">
                         <img src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8b?auto=format&fit=crop&q=80&w=400&h=400" alt="Switch & Router" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 9 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?auto=format&fit=crop&q=80&w=1200', 'Videokonference', 'Hybridní schůzky bez výpadků')">
                         <img src="https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?auto=format&fit=crop&q=80&w=400&h=400" alt="Videokonference" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 10 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1200', 'IT Support', 'Rychlá uživatelská podpora')">
                         <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=400&h=400" alt="Support" class="portfolio-img w-full h-full object-cover">
                     </div>
-                    
                     <!-- Fotka 11 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=1200', 'Optická kabeláž', 'Propojení páteřní sítě')">
                         <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=400&h=400" alt="Optika" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 12 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200', 'Proxmox Cluster', 'Virtualizační infrastruktura')">
                         <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400&h=400" alt="Cluster" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 13 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=1200', 'Boardroom', 'Exekutivní zasedací místnost')">
                         <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=400&h=400" alt="Boardroom" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 14 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200', 'Firewall Fortinet', 'Nasazení edge zabezpečení')">
                         <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=400&h=400" alt="Firewall" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 15 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=1200', 'Open Space', 'Kompletní výměna PC parku')">
                         <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=400&h=400" alt="Open Space" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 16 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=1200', 'Vývojářská stanice', 'Multimonitorový setup')">
                         <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=400&h=400" alt="Vývoj" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 17 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1551703599-6b3e8379aa8b?auto=format&fit=crop&q=80&w=1200', 'Patch panel', 'Vyvázání a označení kabeláže')">
                         <img src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8b?auto=format&fit=crop&q=80&w=400&h=400" alt="Patch Panel" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 18 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?auto=format&fit=crop&q=80&w=1200', 'Huddle Room', 'Videokonference pro menší týmy')">
                         <img src="https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?auto=format&fit=crop&q=80&w=400&h=400" alt="Huddle Room" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 19 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1662998638421-50e5ff30ba55?auto=format&fit=crop&q=80&w=1200', 'Projektor a plátno', 'Instalace projekční techniky')">
                         <img src="https://images.unsplash.com/photo-1662998638421-50e5ff30ba55?auto=format&fit=crop&q=80&w=400&h=400" alt="Projektor" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                     <!-- Fotka 20 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1200', 'On-site podpora', 'Výjezd technika a řešení problému')">
                         <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=400&h=400" alt="Support" class="portfolio-img w-full h-full object-cover">
                     </div>
-
                 </div>
             </div>
         </section>
