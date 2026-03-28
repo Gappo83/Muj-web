@@ -41,7 +41,7 @@
     <nav class="fixed w-full z-50 px-4 md:px-6 py-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center glass rounded-2xl px-6 py-3">
             <div class="flex items-center gap-3 cursor-pointer" onclick="showPage('home'); window.scrollTo({top: 0, behavior: 'smooth'});">
-                <img src="Logo Solverita_black.png" alt="Solverita znak" class="h-8 w-auto">
+                <img src="Logo_Solverita_black.png" alt="Solverita znak" class="h-8 w-auto">
                 <span class="text-xl font-bold tracking-tight uppercase text-white">Solverita</span>
             </div>
             <div class="hidden lg:flex gap-6 xl:gap-8 text-sm font-medium items-center">
@@ -262,86 +262,36 @@
                     <p class="text-slate-400 mt-4 max-w-2xl mx-auto text-sm">Nahlédněte pod pokličku naší práce. Pro detail a popisek fotku rozklikněte.</p>
                 </div>
 
-                <!-- MIKRO GALERIE - 4 sloupce na mobilu, 6 tablet, 8 menší ntb, 10 velký desktop -->
+                <!-- MIKRO GALERIE -->
                 <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2 md:gap-3">
-                    <!-- Fotka 1 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=1200', 'Pracovní stanice', 'Setup koncových zařízení')">
                         <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=400&h=400" alt="Pracovní stanice" class="portfolio-img w-full h-full object-cover">
                     </div>
-                    <!-- Fotka 2 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200', 'Serverovna HQ', 'Organizace kabeláže a instalace racků')">
                         <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=400&h=400" alt="Serverovna" class="portfolio-img w-full h-full object-cover">
                     </div>
-                    <!-- Fotka 3 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1662998638421-50e5ff30ba55?auto=format&fit=crop&q=80&w=1200', 'AV Technika', 'Videokonferenční sály')">
                         <img src="https://images.unsplash.com/photo-1662998638421-50e5ff30ba55?auto=format&fit=crop&q=80&w=400&h=400" alt="Zasedací místnost" class="portfolio-img w-full h-full object-cover">
                     </div>
-                    <!-- Fotka 4 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=1200', 'Síťové prvky', 'Zapojení aktivních prvků sítě')">
                         <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=400&h=400" alt="Kabeláž" class="portfolio-img w-full h-full object-cover">
                     </div>
-                    <!-- Fotka 5 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200', 'Datacentrum', 'Pravidelná údržba a monitoring')">
                         <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400&h=400" alt="Datacentrum" class="portfolio-img w-full h-full object-cover">
                     </div>
-                    <!-- Fotka 6 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=1200', 'Meeting Room', 'Modernizace akustiky a obrazu')">
                         <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=400&h=400" alt="Meeting Room" class="portfolio-img w-full h-full object-cover">
                     </div>
-                    <!-- Fotka 7 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=1200', 'Kancelářské PC', 'Hromadné instalace stanic')">
                         <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=400&h=400" alt="Kancelářské PC" class="portfolio-img w-full h-full object-cover">
                     </div>
-                    <!-- Fotka 8 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1551703599-6b3e8379aa8b?auto=format&fit=crop&q=80&w=1200', 'Switch & Router', 'Konfigurace firemní sítě')">
                         <img src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8b?auto=format&fit=crop&q=80&w=400&h=400" alt="Switch & Router" class="portfolio-img w-full h-full object-cover">
                     </div>
-                    <!-- Fotka 9 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?auto=format&fit=crop&q=80&w=1200', 'Videokonference', 'Hybridní schůzky bez výpadků')">
                         <img src="https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?auto=format&fit=crop&q=80&w=400&h=400" alt="Videokonference" class="portfolio-img w-full h-full object-cover">
                     </div>
-                    <!-- Fotka 10 -->
                     <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1200', 'IT Support', 'Rychlá uživatelská podpora')">
-                        <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=400&h=400" alt="Support" class="portfolio-img w-full h-full object-cover">
-                    </div>
-                    <!-- Fotka 11 -->
-                    <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=1200', 'Optická kabeláž', 'Propojení páteřní sítě')">
-                        <img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&q=80&w=400&h=400" alt="Optika" class="portfolio-img w-full h-full object-cover">
-                    </div>
-                    <!-- Fotka 12 -->
-                    <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1200', 'Proxmox Cluster', 'Virtualizační infrastruktura')">
-                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=400&h=400" alt="Cluster" class="portfolio-img w-full h-full object-cover">
-                    </div>
-                    <!-- Fotka 13 -->
-                    <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=1200', 'Boardroom', 'Exekutivní zasedací místnost')">
-                        <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=400&h=400" alt="Boardroom" class="portfolio-img w-full h-full object-cover">
-                    </div>
-                    <!-- Fotka 14 -->
-                    <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=1200', 'Firewall Fortinet', 'Nasazení edge zabezpečení')">
-                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=400&h=400" alt="Firewall" class="portfolio-img w-full h-full object-cover">
-                    </div>
-                    <!-- Fotka 15 -->
-                    <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=1200', 'Open Space', 'Kompletní výměna PC parku')">
-                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=400&h=400" alt="Open Space" class="portfolio-img w-full h-full object-cover">
-                    </div>
-                    <!-- Fotka 16 -->
-                    <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=1200', 'Vývojářská stanice', 'Multimonitorový setup')">
-                        <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=400&h=400" alt="Vývoj" class="portfolio-img w-full h-full object-cover">
-                    </div>
-                    <!-- Fotka 17 -->
-                    <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1551703599-6b3e8379aa8b?auto=format&fit=crop&q=80&w=1200', 'Patch panel', 'Vyvázání a označení kabeláže')">
-                        <img src="https://images.unsplash.com/photo-1551703599-6b3e8379aa8b?auto=format&fit=crop&q=80&w=400&h=400" alt="Patch Panel" class="portfolio-img w-full h-full object-cover">
-                    </div>
-                    <!-- Fotka 18 -->
-                    <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?auto=format&fit=crop&q=80&w=1200', 'Huddle Room', 'Videokonference pro menší týmy')">
-                        <img src="https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?auto=format&fit=crop&q=80&w=400&h=400" alt="Huddle Room" class="portfolio-img w-full h-full object-cover">
-                    </div>
-                    <!-- Fotka 19 -->
-                    <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1662998638421-50e5ff30ba55?auto=format&fit=crop&q=80&w=1200', 'Projektor a plátno', 'Instalace projekční techniky')">
-                        <img src="https://images.unsplash.com/photo-1662998638421-50e5ff30ba55?auto=format&fit=crop&q=80&w=400&h=400" alt="Projektor" class="portfolio-img w-full h-full object-cover">
-                    </div>
-                    <!-- Fotka 20 -->
-                    <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.6] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1200', 'On-site podpora', 'Výjezd technika a řešení problému')">
                         <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=400&h=400" alt="Support" class="portfolio-img w-full h-full object-cover">
                     </div>
                 </div>
@@ -352,12 +302,12 @@
         <section id="reference" class="py-24 max-w-7xl mx-auto px-6">
             <h2 class="text-center text-slate-500 uppercase tracking-[0.4em] text-xs mb-16">Kdo už má IT pod kontrolou</h2>
             <div class="logo-grid grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-12 gap-y-16 items-center justify-items-center opacity-80">
-                <img src="https://www.solverita.cz/wp-content/uploads/2025/09/Penta.png" alt="Penta" class="h-8">
-                <img src="https://www.solverita.cz/wp-content/uploads/2025/12/ct-velke-1.webp" alt="Česká televize" class="h-10">
-                <img src="https://www.solverita.cz/wp-content/uploads/2025/07/yusen-logistics-logo-vector-pruhledny-1-.png" alt="Yusen" class="h-8">
-                <img src="https://www.solverita.cz/wp-content/uploads/2025/01/pudis_web.png" alt="Pudis" class="h-10">
-                <img src="https://www.solverita.cz/wp-content/uploads/2022/10/solverita_tesla.png" alt="Tesla" class="h-10">
-                <img src="https://www.solverita.cz/wp-content/uploads/2025/12/abc-1.webp" alt="ABC" class="h-8">
+                <div class="h-10 w-24 bg-gradient-to-r from-white/20 to-white/10 rounded flex items-center justify-center text-white/60 font-bold text-sm">PENTA</div>
+                <div class="h-10 w-24 bg-gradient-to-r from-white/20 to-white/10 rounded flex items-center justify-center text-white/60 font-bold text-sm">ČT</div>
+                <div class="h-10 w-24 bg-gradient-to-r from-white/20 to-white/10 rounded flex items-center justify-center text-white/60 font-bold text-sm">YUSEN</div>
+                <div class="h-10 w-24 bg-gradient-to-r from-white/20 to-white/10 rounded flex items-center justify-center text-white/60 font-bold text-sm">PUDIS</div>
+                <div class="h-10 w-24 bg-gradient-to-r from-white/20 to-white/10 rounded flex items-center justify-center text-white/60 font-bold text-sm">TESLA</div>
+                <div class="h-10 w-24 bg-gradient-to-r from-white/20 to-white/10 rounded flex items-center justify-center text-white/60 font-bold text-sm">ABC</div>
             </div>
         </section>
 
@@ -365,11 +315,11 @@
         <section id="partnerstvi" class="py-16 bg-white/5 border-t border-white/5">
             <div class="max-w-7xl mx-auto px-6">
                 <div class="flex flex-wrap justify-center gap-10 grayscale opacity-40">
-                    <img src="https://www.solverita.cz/wp-content/uploads/2022/10/solverita_dell.png" alt="Dell" class="h-6">
-                    <img src="https://www.solverita.cz/wp-content/uploads/2022/10/solverita_hp.png" alt="HP" class="h-6">
-                    <img src="https://www.solverita.cz/wp-content/uploads/2022/10/solverita_lenovo.png" alt="Lenovo" class="h-6">
-                    <img src="https://www.solverita.cz/wp-content/uploads/2022/10/solverita_fortinet.png" alt="Fortinet" class="h-6">
-                    <img src="https://www.solverita.cz/wp-content/uploads/2022/10/solverita_logitech.png" alt="Logitech" class="h-6">
+                    <div class="h-6 w-16 bg-white/30 rounded flex items-center justify-center text-[10px] font-bold text-white/80">DELL</div>
+                    <div class="h-6 w-16 bg-white/30 rounded flex items-center justify-center text-[10px] font-bold text-white/80">HP</div>
+                    <div class="h-6 w-16 bg-white/30 rounded flex items-center justify-center text-[10px] font-bold text-white/80">LENOVO</div>
+                    <div class="h-6 w-16 bg-white/30 rounded flex items-center justify-center text-[10px] font-bold text-white/80">FORTINET</div>
+                    <div class="h-6 w-16 bg-white/30 rounded flex items-center justify-center text-[10px] font-bold text-white/80">LOGITECH</div>
                 </div>
             </div>
         </section>
@@ -414,7 +364,7 @@
                             </div>
                             <div class="flex items-center gap-3 pt-2">
                                 <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                                <a href="mailto:info@solverita.cz" class="text-slate-400 text-sm hover:text-[#00a9ff] transition cursor-pointer">info@solverita.cz</a>
+                                <a href="/cdn-cgi/l/email-protection#a3cacdc5cce3d0cccfd5c6d1cad7c28dc0d9" class="text-slate-400 text-sm hover:text-[#00a9ff] transition cursor-pointer"><span class="__cf_email__" data-cfemail="82ebece4edc2f1edeef4e7f0ebf6e3ace1f8">[email&#160;protected]</span></a>
                             </div>
                         </div>
                     </div>
@@ -441,53 +391,56 @@
         <section class="max-w-4xl mx-auto px-6 text-center mb-24">
             <div class="inline-block px-4 py-1 rounded-full border border-[#00ea9a]/30 text-[#00ea9a] text-xs font-bold mb-6 tracking-widest uppercase cursor-pointer hover:bg-[#00ea9a]/10 transition" onclick="showPage('home'); window.scrollTo({top: 0, behavior: 'instant'});">← Zpět na přehled</div>
             <h1 class="text-4xl md:text-6xl font-bold mb-6">Proxmox VE v <span class="gradient-text">průmyslové výrobě</span></h1>
-            <p class="text-xl text-slate-400">Nezávislost a spolehlivost pro 24/7 provoz bez drastických licenčních poplatků. Jak jsme nahradili starý VMware.</p>
+            <p class="text-xl text-slate-400 max-w-3xl mx-auto">Česká průmyslová společnost specializující se na výrobu hliníku provozovala svou IT infrastrukturu na vlastních serverech s virtualizační platformou VMware. Po výrazné změně cenové politiky ze strany vlastníka této platformy a následné havárii klíčového serveru se společnost rozhodla přejít na open source řešení Proxmox VE. Pro realizaci migrace oslovila Solveritu, která disponuje hlubokým know-how v oblasti této technologie.</p>
         </section>
 
-        <!-- Bolesti a Situace -->
+        <!-- Identifikace potřeb -->
         <section class="max-w-7xl mx-auto px-6 mb-24">
-            <h2 class="text-3xl font-bold mb-8 text-center">Výchozí stav & Bolesti staré infrastruktury</h2>
+            <h2 class="text-3xl font-bold mb-8 text-center">Identifikace potřeb</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="glass p-10 rounded-3xl">
-                    <h3 class="text-xl font-bold text-[#00a9ff] mb-4 border-b border-white/10 pb-4">Finanční neudržitelnost (Vendor Lock-in)</h3>
-                    <p class="text-slate-400">Společnost dlouhodobě čelila výraznému riziku. Náklady na prodlužování licencí platformy VMware exponenciálně rostly, čímž vysávaly IT rozpočet, který chyběl pro další inovace a bezpečnost.</p>
+                <div class="glass p-10 rounded-3xl border-t border-white/10">
+                    <div class="text-sm font-bold text-[#00ea9a] uppercase tracking-widest mb-2">Potřeba</div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Modernizace IT infrastruktury</h3>
+                    <p class="text-slate-400 text-lg">Společnost čelila postupnému nárůstu nároků na výkon, dostupnost a správu svých informačních systémů, což odhalilo limity stávající infrastruktury. Prostředí bylo historicky budováno postupně a bez jednotné koncepce, což vedlo k obtížné správě celku. Některé servery byly již na hranici životnosti, a virtualizační platforma postavená na VMware byla z dlouhodobého licenčního hlediska neudržitelná. Náklady na rozšiřování nebo přechod na novější verze začaly výrazně růst a zároveň neumožňovaly dostatečnou flexibilitu při nasazování nových služeb. Tyto faktory vedly k rozhodnutí celou infrastrukturu konsolidovat, standardizovat a modernizovat pomocí otevřeného, škálovatelného a efektivního řešení.</p>
                 </div>
-                <div class="glass p-10 rounded-3xl">
-                    <h3 class="text-xl font-bold text-[#00ea9a] mb-4 border-b border-white/10 pb-4">Hardwarová rigidita</h3>
-                    <p class="text-slate-400">Závažný výpadek starého serveru (vadný řadič) ukázal křehkost postupně nabalované infrastruktury. Bylo nutné pořídit nový hardware a zavést ucelený, centralizovaný koncept pro bezpečný 24/7 provoz.</p>
+                <div class="glass p-10 rounded-3xl border-t border-white/10">
+                    <div class="text-sm font-bold text-[#00a9ff] uppercase tracking-widest mb-2">Požadavek</div>
+                    <h3 class="text-2xl font-bold text-white mb-4">Spolehlivost v průmyslovém provozu</h3>
+                    <p class="text-slate-400 text-lg">Vzhledem k charakteru nepřetržitého průmyslového provozu je na IT infrastrukturu kladen požadavek maximální spolehlivosti a dostupnosti služeb, neboť výpadek může mít přímý dopad na výrobu. Pro zajištění kontinuity provozu bylo klíčové nasadit řešení s možností pravidelného a bezpečného zálohování, rychlé obnovy a minimalizace výpadků. Proxmox VE v kombinaci s Proxmox Backup Serverem poskytuje nativní a plně integrovaný nástroj pro zálohování a obnovu virtuálních strojů, který umožňuje efektivní správu záloh, deduplikaci, inkrementální kopie a šifrování dat, a tím výrazně zvyšuje celkovou odolnost systému vůči haváriím nebo lidským chybám.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Řešení text a parametry -->
-        <section class="max-w-7xl mx-auto px-6 mb-24 bg-slate-900/50 py-16 rounded-[40px] border border-white/5">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center px-6 lg:px-12">
-                <div>
-                    <h2 class="text-3xl font-bold mb-6">Řešení: Modernizace na Proxmox VE</h2>
-                    <p class="text-slate-400 mb-6 text-lg">Místo nákupu drahých enterprise licencí jsme zvolili přechod na masivně populární open-source podnikovou platformu <strong>Proxmox VE</strong>, postavenou na stabilním Debian Linuxu.</p>
-                    <p class="text-slate-400 mb-8 text-lg">Proxmox v sobě nativně spojuje plnohodnotné virtuální stroje (KVM) a efektivní linuxové kontejnery (LXC). Celé prostředí je sjednoceno pod přehledným webovým rozhraním, díky kterému získal lokální IT tým dokonalý přehled.</p>
-                    
-                    <div class="grid grid-cols-2 gap-6 mt-10">
-                        <div class="border-l-4 border-[#00ea9a] pl-6">
-                            <div class="text-4xl font-bold text-white mb-1">24/7</div>
-                            <div class="text-sm text-slate-400 uppercase tracking-wide">Nepřetržitý provoz</div>
-                        </div>
-                        <div class="border-l-4 border-[#00a9ff] pl-6">
-                            <div class="text-4xl font-bold text-white mb-1">0 Kč</div>
-                            <div class="text-sm text-slate-400 uppercase tracking-wide">Roční licence Proxmox</div>
+        <!-- Řešení -->
+        <section class="max-w-7xl mx-auto px-6 mb-24">
+            <div class="glass bg-slate-900/50 p-10 md:p-16 rounded-[40px] border border-white/5">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    <div>
+                        <h2 class="text-3xl font-bold mb-6 text-white">Řešení: Proxmox Virtual Environment</h2>
+                        <p class="text-slate-400 mb-8 text-lg">Proxmox VE (Virtual Environment) je open source virtualizační platforma určená pro správu virtuálních strojů a kontejnerů. Kombinuje technologie KVM a LXC s intuitivním webovým rozhraním, podporou vysoké dostupnosti, zálohováním, replikací a snadným vytvářením clusterů. Díky své stabilitě, flexibilitě a nulovým licenčním nákladům představuje atraktivní alternativu ke komerčním řešením, jako je VMware vSphere.</p>
+                        
+                        <div class="grid grid-cols-2 gap-6 mt-10">
+                            <div class="border-l-4 border-[#00ea9a] pl-6">
+                                <div class="text-4xl font-bold text-white mb-1">24/7</div>
+                                <div class="text-sm text-slate-400 uppercase tracking-wide">Nepřetržitý provoz</div>
+                            </div>
+                            <div class="border-l-4 border-[#00a9ff] pl-6">
+                                <div class="text-4xl font-bold text-white mb-1">0 Kč</div>
+                                <div class="text-sm text-slate-400 uppercase tracking-wide">Roční licence Proxmox</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="rounded-3xl overflow-hidden border border-white/10 aspect-video lg:aspect-square relative">
-                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800&h=800" alt="Server rack infrastructure" class="object-cover w-full h-full grayscale opacity-60">
-                    <div class="absolute inset-0 bg-gradient-to-tr from-[#00ea9a]/20 to-[#00a9ff]/20 mix-blend-overlay"></div>
+                    <div class="rounded-3xl overflow-hidden border border-white/10 aspect-video lg:aspect-square relative">
+                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&q=80&w=800&h=800" alt="Server rack infrastructure" class="object-cover w-full h-full grayscale opacity-60">
+                        <div class="absolute inset-0 bg-gradient-to-tr from-[#00ea9a]/20 to-[#00a9ff]/20 mix-blend-overlay"></div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- HW Tabulka -->
         <section class="max-w-5xl mx-auto px-6 mb-24">
-            <h2 class="text-3xl font-bold mb-8 text-center">Hardwarová specifikace (DELL)</h2>
+            <h2 class="text-3xl font-bold mb-8 text-center">Hardware k provozu Proxmox VE</h2>
             <div class="glass rounded-3xl overflow-hidden">
                 <table class="w-full text-left custom-table">
                     <thead>
@@ -498,140 +451,111 @@
                     </thead>
                     <tbody class="text-slate-300">
                         <tr>
-                            <td class="p-6 font-bold text-white">Server Node</td>
-                            <td class="p-6">DELL PowerEdge R550</td>
-                        </tr>
-                        <tr>
-                            <td class="p-6 font-bold text-white">Výpočetní výkon</td>
-                            <td class="p-6">2x Intel Xeon Silver 4309Y (Celkem 16 fyzických / 32 logických jader)</td>
-                        </tr>
-                        <tr>
-                            <td class="p-6 font-bold text-white">Operační paměť</td>
-                            <td class="p-6">DDR4-2666 s ECC korekcí chyb</td>
+                            <td class="p-6 font-bold text-white">Server</td>
+                            <td class="p-6">DELL PowerEdge R550 – Server DELL PowerEdge R550 jsou to nejlepší ve své kategorii. Zajišťují dokonalou spolehlivost hardwaru.</td>
                         </tr>
                         <tr>
                             <td class="p-6 font-bold text-white">Bootovací Storage</td>
-                            <td class="p-6">Karta BOSS-S2 s 2x M.2 (240GB) zapojené v hardwarovém RAID 1</td>
+                            <td class="p-6">BOSS-S2 controller card pro 2x M.2 240GB v RAID 1 – Boot Optimized Storage Solution (BOSS) slouží k oddělení bootovacího úložiště pro hypervizor Proxmox VE od hlavního datového úložiště.</td>
                         </tr>
                         <tr>
-                            <td class="p-6 font-bold text-white">Hlavní Data Storage</td>
-                            <td class="p-6">ZFS Mirror nad SATA SSD (960GB pro OS) a SATA HDD (4TB pro objemná data)</td>
+                            <td class="p-6 font-bold text-white">Datové úložiště</td>
+                            <td class="p-6">960GB SSD SATA pro VM a LXC kontejnery a 4TB HDD SATA v ZFS pro data.</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 font-bold text-white">Výpočetní výkon</td>
+                            <td class="p-6">2x Intel Xeon Silver 4309Y 2.8G, 8C/16T, 10.4GT/s, 12M Cache, Turbo, HT (105W) DDR4-2666 – 16 fyzických a 32 logických jader poskytuje vysokou výpočetní kapacitu pro virtualizaci, paralelní zpracování a náročné podnikové aplikace. 16 jader bylo zvoleno i k pohodlnému licencování Windows Server.</td>
+                        </tr>
+                        <tr>
+                            <td class="p-6 font-bold text-white">ZFS filesystem</td>
+                            <td class="p-6">ZFS místo klasického RAID přináší v kombinaci s dostatkem operační paměti vyšší výkon.</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        <!-- SW a Bezpečnost -->
+        <!-- Nasazení -->
         <section class="max-w-7xl mx-auto px-6 mb-24">
-            <h2 class="text-3xl font-bold mb-12 text-center">Softwarový & Bezpečnostní Stack</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <h2 class="text-3xl font-bold mb-12 text-center">Nasazení</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="glass p-8 rounded-3xl">
-                    <div class="text-4xl mb-6">💾</div>
-                    <h3 class="text-xl font-bold mb-3">ZFS Filesystem</h3>
-                    <p class="text-slate-400 text-sm">Upustili jsme od klasických HW RAID řadičů ve prospěch softwarového ZFS. Nativně chrání data proti poškození (bit rot) a nabízí extrémní výkon pro databáze s bleskovými snapshoty.</p>
+                    <div class="text-3xl mb-4">💿</div>
+                    <h4 class="text-xl font-bold text-white mb-3">Instalace Proxmoxu na standalone server</h4>
+                    <p class="text-slate-400 text-sm">Solverita provedla kompletní první spuštění, nastavení serveru a instalaci Proxmoxu, které je s příslušným know-how v porovnání s konkurencí poměrně rychlým procesem.</p>
                 </div>
                 <div class="glass p-8 rounded-3xl">
-                    <div class="text-4xl mb-6">🛡️</div>
-                    <h3 class="text-xl font-bold mb-3">Proxmox Backup</h3>
-                    <p class="text-slate-400 text-sm">Nasazen nativní Proxmox Backup Server (PBS). Umožňuje plně přírůstkové zálohování s deduplikací. To masivně šetří místo na disku a RTO (doba obnovy) se zkrátila na jednotky minut.</p>
+                    <div class="text-3xl mb-4">🎓</div>
+                    <h4 class="text-xl font-bold text-white mb-3">Základní nastavení serveru a školení IT zákazníka</h4>
+                    <p class="text-slate-400 text-sm">Solverita dohlédla na instalaci serveru v místě určení. S tím proběhlo proškolení IT personálu zákazníka, první průchod systémem a nastavení dle specifikací.</p>
                 </div>
                 <div class="glass p-8 rounded-3xl">
-                    <div class="text-4xl mb-6">📈</div>
-                    <h3 class="text-xl font-bold mb-3">Monitoring (Zabbix)</h3>
-                    <p class="text-slate-400 text-sm">Nasadili jsme Zabbix agenty napříč celou sítí ve spojení s DELL iDRAC pro out-of-band dohled. O blížícím se problému s diskem víme dřív, než ohrozí chod produkce.</p>
+                    <div class="text-3xl mb-4">🌐</div>
+                    <h4 class="text-xl font-bold text-white mb-3">Nastavení sítě</h4>
+                    <p class="text-slate-400 text-sm">Solverita dodala know-how k nastavení síťových karet a v zapojení nového serveru do místní sítě.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl">
+                    <div class="text-3xl mb-4">🔄</div>
+                    <h4 class="text-xl font-bold text-white mb-3">Migrace virtuálních strojů a kontejnerů</h4>
+                    <p class="text-slate-400 text-sm">Migraci dat z předchozího řešení na nové. Migrace proběhla bezproblémově, téměř bez přerušení provozu.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl">
+                    <div class="text-3xl mb-4">💾</div>
+                    <h4 class="text-xl font-bold text-white mb-3">Nastavení zálohování a snapshotů</h4>
+                    <p class="text-slate-400 text-sm">Nastavení Proxmox Backup Serveru, automatizovaného zálohování a snapshottingu, spolu s průchodem procesem obnovy.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl">
+                    <div class="text-3xl mb-4">📊</div>
+                    <h4 class="text-xl font-bold text-white mb-3">Nastavení monitoringu a správy</h4>
+                    <p class="text-slate-400 text-sm">Posledním krokem bylo nastavení monitoringu pomocí systému Zabbix a správy pomocí nativního systému iDRAC, se kterým je Proxmox VE plně kompatibilní. Správa Proxmox VE je možná jak přes terminál, tak přes webové GUI.</p>
                 </div>
             </div>
         </section>
 
-        <!-- TCO Graf -->
-        <section class="max-w-4xl mx-auto px-6 mb-24">
-            <h2 class="text-3xl font-bold mb-4 text-center">Srovnání TCO (VMware vs Proxmox)</h2>
-            <p class="text-center text-slate-400 mb-12 max-w-2xl mx-auto">Zatímco u starého řešení rostou náklady na licence exponenciálně, u Proxmoxu se investuje pouze do HW a úvodní implementace.</p>
-            
-            <div class="glass p-8 md:p-12 rounded-[40px] space-y-8">
-                <!-- Rok 1 -->
-                <div class="space-y-3">
-                    <div class="flex items-center gap-4">
-                        <div class="w-32 md:w-40 text-sm font-bold text-slate-400 text-right">Rok 1 (VMware)</div>
-                        <div class="flex-grow bg-white/5 rounded-full h-8 relative overflow-hidden">
-                            <div class="absolute top-0 left-0 h-full bg-rose-600 w-[30%] rounded-full flex items-center justify-end px-4 text-xs font-bold">300K</div>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="w-32 md:w-40 text-sm font-bold text-white text-right">Rok 1 (Proxmox)</div>
-                        <div class="flex-grow bg-white/5 rounded-full h-8 relative overflow-hidden">
-                            <div class="absolute top-0 left-0 h-full bg-[#00ea9a] w-[35%] rounded-full flex items-center justify-end px-4 text-xs font-bold text-slate-900">350K (HW + Práce)</div>
-                        </div>
-                    </div>
+        <!-- Benefity -->
+        <section class="max-w-7xl mx-auto px-6 mb-24">
+            <h2 class="text-3xl font-bold mb-12 text-center">Benefity</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="glass p-8 rounded-3xl">
+                    <div class="text-3xl mb-4">🔄</div>
+                    <h4 class="text-xl font-bold text-white mb-3">Snadná migrace</h4>
+                    <p class="text-slate-400 text-sm">Proxmox nabízí vlastní nástroj k migrací virtuálních strojů a kontejnerů z VMware do nového Proxmox prostředí. Migrace díky tomu proběhla bez problémů.</p>
                 </div>
-                <!-- Rok 3 -->
-                <div class="space-y-3 pt-4 border-t border-white/10">
-                    <div class="flex items-center gap-4">
-                        <div class="w-32 md:w-40 text-sm font-bold text-slate-400 text-right">Rok 3 (VMware)</div>
-                        <div class="flex-grow bg-white/5 rounded-full h-8 relative overflow-hidden">
-                            <div class="absolute top-0 left-0 h-full bg-rose-600 w-[70%] rounded-full flex items-center justify-end px-4 text-xs font-bold">700K (Licence)</div>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="w-32 md:w-40 text-sm font-bold text-white text-right">Rok 3 (Proxmox)</div>
-                        <div class="flex-grow bg-white/5 rounded-full h-8 relative overflow-hidden">
-                            <div class="absolute top-0 left-0 h-full bg-[#00ea9a] w-[35%] rounded-full flex items-center justify-end px-4 text-xs font-bold text-slate-900">350K (Pevné)</div>
-                        </div>
-                    </div>
+                <div class="glass p-8 rounded-3xl">
+                    <div class="text-3xl mb-4">💰</div>
+                    <h4 class="text-xl font-bold text-white mb-3">Snížení nákladů na licence</h4>
+                    <p class="text-slate-400 text-sm">Přechod na open source řešení odstranil vysoké licenční poplatky za virtualizaci a umožnil plnou kontrolu nad prostředím bez vendor lock-in.</p>
                 </div>
-                <!-- Rok 5 -->
-                <div class="space-y-3 pt-4 border-t border-white/10">
-                    <div class="flex items-center gap-4">
-                        <div class="w-32 md:w-40 text-sm font-bold text-slate-400 text-right">Rok 5 (VMware)</div>
-                        <div class="flex-grow bg-white/5 rounded-full h-8 relative overflow-hidden">
-                            <div class="absolute top-0 left-0 h-full bg-rose-600 w-[100%] rounded-full flex items-center justify-end px-4 text-xs font-bold">1.1M+ (Licence)</div>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <div class="w-32 md:w-40 text-sm font-bold text-white text-right">Rok 5 (Proxmox)</div>
-                        <div class="flex-grow bg-white/5 rounded-full h-8 relative overflow-hidden">
-                            <div class="absolute top-0 left-0 h-full bg-[#00ea9a] w-[35%] rounded-full flex items-center justify-end px-4 text-xs font-bold text-slate-900">350K (Pevné)</div>
-                        </div>
-                    </div>
+                <div class="glass p-8 rounded-3xl">
+                    <div class="text-3xl mb-4">📈</div>
+                    <h4 class="text-xl font-bold text-white mb-3">Snadné škálování</h4>
+                    <p class="text-slate-400 text-sm">Proxmox VE nyní běží na jednom serveru, ale v budoucnu je plánované výrazné rozšíření. Škálování ze standalone serveru do clusterů je s Proxmox VE naprosto bezproblémové.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl">
+                    <div class="text-3xl mb-4">💾</div>
+                    <h4 class="text-xl font-bold text-white mb-3">Vylepšené možnosti zálohování a obnovy dat</h4>
+                    <p class="text-slate-400 text-sm">Proxmox výrazně zjednodušuje proces zálohování a obnovy díky integrovanému nástroji pro kompletní zálohy virtuálních strojů, podpoře inkrementálních a deduplikovaných záloh přes Proxmox Backup Server a možnosti rychlé obnovy systému během několika minut.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl">
+                    <div class="text-3xl mb-4">👥</div>
+                    <h4 class="text-xl font-bold text-white mb-3">Komunita a podpora zdarma</h4>
+                    <p class="text-slate-400 text-sm">Proxmox je open source řešení s aktivní komunitou, která nabízí rozsáhlou online dokumentaci a živé diskuzní fórum. Většinu běžných problémů je možné vyřešit díky sdíleným zkušenostem a návodům od ostatních uživatelů. Pro náročnější provozy je zároveň k dispozici možnost zakoupení oficiální podpory přímo od vývojářů softwaru, nebo od Solverity.</p>
+                </div>
+                <div class="glass p-8 rounded-3xl">
+                    <div class="text-3xl mb-4">🔧</div>
+                    <h4 class="text-xl font-bold text-white mb-3">Široká hardwarová kompatibilita</h4>
+                    <p class="text-slate-400 text-sm">Na rozdíl od některých komerčních virtualizačních řešení, jako je VMware, není Proxmox VE omezen na úzce definovaný seznam certifikovaného hardwaru. Díky tomu lze platformu provozovat na široké škále serverů – od nejnovějších enterprise zařízení až po starší stroje. To výrazně zjednodušuje nasazení, prodlužuje životnost stávajícího vybavení a snižuje celkové investiční náklady.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Hlavní benefity -->
+        <!-- Shrnutí -->
         <section class="max-w-5xl mx-auto px-6 mb-24">
-            <div class="glass p-10 md:p-16 rounded-[40px]">
-                <h2 class="text-3xl font-bold mb-10 border-b border-white/10 pb-6">Hlavní benefity řešení z pohledu byznysu</h2>
-                <ul class="space-y-6">
-                    <li class="flex gap-4 items-start">
-                        <div class="text-2xl mt-1">💰</div>
-                        <div>
-                            <strong class="text-white text-lg block mb-1">Absolutní nákladová efektivita</strong>
-                            <p class="text-slate-400">Klient se definitivně zbavil vysokých a neustále rostoucích licenčních poplatků. Získaný rozpočet mohl investovat do lepšího hardwaru a vyšší bezpečnosti sítě.</p>
-                        </div>
-                    </li>
-                    <li class="flex gap-4 items-start">
-                        <div class="text-2xl mt-1">🔓</div>
-                        <div>
-                            <strong class="text-white text-lg block mb-1">Konec vendor lock-inu</strong>
-                            <p class="text-slate-400">Díky open-source základu a integraci univerzálních formátů je klient plně nezávislý na licenční politice jedné korporace.</p>
-                        </div>
-                    </li>
-                    <li class="flex gap-4 items-start">
-                        <div class="text-2xl mt-1">⏱️</div>
-                        <div>
-                            <strong class="text-white text-lg block mb-1">Rychlost obnovy v minutách</strong>
-                            <p class="text-slate-400">Pokud selže virtuální server, jede z nové zálohy díky PBS deduplikaci dříve, než to výroba stihne pocítit.</p>
-                        </div>
-                    </li>
-                    <li class="flex gap-4 items-start">
-                        <div class="text-2xl mt-1">🚀</div>
-                        <div>
-                            <strong class="text-white text-lg block mb-1">Připraveno na růst</strong>
-                            <p class="text-slate-400">Pokud firmě přestane stačit jeden node, jednoduše dokoupíme další a vytvoříme High-Availability cluster bez výpadků výroby.</p>
-                        </div>
-                    </li>
-                </ul>
+            <div class="glass p-10 md:p-16 rounded-[40px] text-center relative border-[#00ea9a]/30">
+                <h2 class="text-sm font-bold text-[#00ea9a] uppercase tracking-[0.3em] mb-6">Shrnutí</h2>
+                <p class="text-2xl md:text-3xl font-light text-white leading-relaxed mb-6">Výrobní společnost z oblasti zpracování hliníku řešila modernizaci své serverové infrastruktury v reakci na rostoucí licenční náklady VMware a havárii klíčového serveru. Cílem bylo zvýšit spolehlivost prostředí, zjednodušit správu a zároveň snížit provozní náklady.</p>
+                <p class="text-lg text-slate-400 mb-6">Ve spolupráci se Solveritou byl zvolen přechod na open-source platformu Proxmox VE, nasazenou na nový server Dell s využitím ZFS úložiště. Součástí řešení byla migrace virtuálních strojů, nastavení zálohování pomocí Proxmox Backup Server a zaškolení interního IT týmu.</p>
+                <p class="text-lg text-slate-400">Zákazník získal stabilní, přehledné a škálovatelné virtualizační prostředí s vysokou dostupností, výrazně nižšími náklady na licence a připraveností na budoucí rozšiřování infrastruktury.</p>
             </div>
         </section>
 
@@ -648,622 +572,67 @@
     <!-- VIDEOKONFERENCE CASE STUDY PAGE            -->
     <!-- ========================================== -->
     <main id="videokonference-page" class="page-content min-h-screen pt-32 pb-24">
-        
-        <!-- Hero Studie -->
         <section class="max-w-4xl mx-auto px-6 text-center mb-24">
             <div class="inline-block px-4 py-1 rounded-full border border-[#00ea9a]/30 text-[#00ea9a] text-xs font-bold mb-6 tracking-widest uppercase cursor-pointer hover:bg-[#00ea9a]/10 transition" onclick="showPage('home'); window.scrollTo({top: 0, behavior: 'instant'});">← Zpět na přehled</div>
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Videokonferenční <br><span class="gradient-text">místnost</span></h1>
-            <p class="text-xl text-slate-400 max-w-3xl mx-auto">Přední česká inženýrská společnost si byla vědoma potřeby kvalitních konferenčních místností, které umožní zaměstnancům bezproblémovou dálkovou i místní komunikaci, zejména s klíčovými obchodními partnery. Tato případová studie představuje řešení konferenční místnosti s technologiemi od výrobců Logitech, iiyama a ViewSonic.</p>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Videokonferenční <span class="gradient-text">místnost</span></h1>
+            <p class="text-xl text-slate-400 max-w-3xl mx-auto">Přední česká inženýrská společnost potřebovala kvalitní konferenční místnosti pro hybridní schůzky.</p>
         </section>
-
-        <!-- Identifikace & Realizace -->
-        <section class="max-w-7xl mx-auto px-6 mb-24">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="glass p-10 rounded-3xl border-t border-white/10">
-                    <div class="text-sm font-bold text-[#00a9ff] uppercase tracking-widest mb-2">Potřeba</div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Dokonale optimalizovaná zasedací místnost</h3>
-                    <p class="text-slate-400 text-lg">Společnost potřebovala špičkový AV systém, který by zajistil spolehlivou vzdálenou komunikaci akcionářů. Hledala uživatelsky přívětivá a spolehlivá řešení pro videokonference, která poskytují vysoce kvalitní zvuk i obraz a umožňují bezproblémovou spolupráci během online schůzek.</p>
-                </div>
-                <div class="glass p-10 rounded-3xl border-t border-white/10">
-                    <div class="text-sm font-bold text-[#00ea9a] uppercase tracking-widest mb-2">Požadavek</div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Rezervace zasedaček a plánování</h3>
-                    <p class="text-slate-400 text-lg">Společnost potřebovala efektivní systém pro rezervaci a plánování zasedacích místností. Jejím cílem bylo implementovat uživatelsky přívětivé řešení, které umožní snadnou identifikaci dostupnosti místností, jejich rezervaci a efektivní plánování.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Řešení -->
-        <section class="max-w-7xl mx-auto px-6 mb-24">
-            <div class="glass bg-slate-900/50 p-10 md:p-16 rounded-[40px] border border-white/5">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                    <div>
-                        <h2 class="text-3xl font-bold mb-6 text-white">Velká zasedací místnost s videokonferencí</h2>
-                        <p class="text-slate-400 mb-8 text-lg">Logitech Tap Scheduler a jeho propojení s Microsoft 365 umožňuje snadnou kontrolu dostupnosti místností, rezervace předem prostřednictvím MS kalendáře nebo ad hoc přímo na zařízení. Uživatelsky přívětivé a intuitivní rozhraní usnadňuje správu rezervací a předchází možným konfliktům.</p>
-                        
-                        <div class="space-y-5">
-                            <div class="flex gap-4 items-start">
-                                <div class="text-2xl mt-1">📺</div>
-                                <div><strong class="text-white text-lg">Displej 98" iiyama ProLite</strong><br><span class="text-slate-400 text-sm">Velkoformátový 4K displej, který nabízí ohromující obraz a perfektní viditelnost i ve velkých místnostech. Ideální pro prezentace, videohovory a týmovou spolupráci.</span></div>
-                            </div>
-                            <div class="flex gap-4 items-start">
-                                <div class="text-2xl mt-1">📅</div>
-                                <div><strong class="text-white text-lg">Logitech Tap Scheduler</strong><br><span class="text-slate-400 text-sm">Elegantní dotykový panel pro plánování schůzek a snadnou orientaci. Tap Scheduler zlepšuje organizaci místnosti a šetří čas při hledání volných termínů.</span></div>
-                            </div>
-                            <div class="flex gap-4 items-start">
-                                <div class="text-2xl mt-1">🎙️</div>
-                                <div><strong class="text-white text-lg">Logitech Rally Mic Pods + Rally Speaker</strong><br><span class="text-slate-400 text-sm">Rozšíření zvukového pokrytí a čistoty ve velkých prostorách. Mikrofony zachytí každý hlas v místnosti, zatímco reproduktory zajišťují přirozený a jasný zvuk.</span></div>
-                            </div>
-                            <div class="flex gap-4 items-start">
-                                <div class="text-2xl mt-1">💻</div>
-                                <div><strong class="text-white text-lg">Náhledové displeje ViewSonic VA1655 16”</strong><br><span class="text-slate-400 text-sm">Kompaktní a flexibilní náhledové monitory přímo na stole. Tyto displeje umožňují pohodlné sledování obsahu zblízka, aniž by bylo nutné se spoléhat pouze na hlavní obrazovku.</span></div>
-                            </div>
-                            <div class="flex gap-4 items-start">
-                                <div class="text-2xl mt-1">🧩</div>
-                                <div><strong class="text-white text-lg">Logitech Large Room Solutions</strong><br><span class="text-slate-400 text-sm">Komplexní řešení pro videokonference určené pro velké místnosti. Poskytuje špičkový obraz, křišťálově čistý zvuk a umožňuje intuitivní ovládání prostřednictvím Logitech Tap.</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded-3xl overflow-hidden aspect-square border border-white/10 relative sticky top-32">
-                        <img src="https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?auto=format&fit=crop&q=80&w=1200&h=1200" alt="Videokonferenční sál" class="w-full h-full object-cover grayscale opacity-80">
-                        <div class="absolute inset-0 bg-gradient-to-tr from-[#00ea9a]/20 to-[#00a9ff]/20 mix-blend-overlay"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Benefity -->
         <section class="max-w-7xl mx-auto px-6 mb-24">
             <h2 class="text-3xl font-bold mb-12 text-center">Benefity</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Benefit 1 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">🤝</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Dokonalé podmínky ke spolupráci</h4>
-                    <p class="text-slate-400 text-sm">Špičkové audio a video, snadné ovládání a okamžitá připravenost vytvářejí ideální podmínky pro efektivní a příjemnou spolupráci a koordinaci pracovních týmů.</p>
-                </div>
-                <!-- Benefit 2 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">📅</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Efektivní plánování</h4>
-                    <p class="text-slate-400 text-sm">S integrovaným kontrolním panelem Logitech Tap je plánování a správa schůzek bezproblémová, šetří čas a minimalizuje technické potíže, čímž zvyšuje produktivitu.</p>
-                </div>
-                <!-- Benefit 3 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">💬</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Zlepšení komunikace</h4>
-                    <p class="text-slate-400 text-sm">Špičková kvalita zvuku, kterou zajišťují Logitech Rally Speaker a Logitech Rally Mic Pods, umožňuje jasnou a srozumitelnou komunikaci ve všech konferenčních prostorách, díky čemuž virtuální interakce působí přirozeně.</p>
-                </div>
-                <!-- Benefit 4 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">👁️</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Omračující obraz</h4>
-                    <p class="text-slate-400 text-sm">Kvalitní 98″ displej iiyama ProLite zajišťuje vynikající vizuální kontakt během prezentací a videokonferencí. Pro ještě lepší přehlednost je vizualizace doplněna čtyřmi 16″ displeji ViewSonic VA1655 umístěnými na stole, což umožňuje detailní studium obsahu všem účastníkům.</p>
-                </div>
-                <!-- Benefit 5 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">🎭</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Víceúčelové řešení</h4>
-                    <p class="text-slate-400 text-sm">Místnost je ideální pro širokou škálu využití. Kromě videokonferencí skvěle poslouží také pro školení, prezentace nebo workshopy – ať už na místě, vzdáleně, nebo v kombinovaném režimu.</p>
-                </div>
-                <!-- Benefit 6 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">🔌</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Moderní konektivita</h4>
-                    <p class="text-slate-400 text-sm">K prostředí se lze připojit pomocí moderních metod, které podporují široké spektrum zařízení a usnadňují práci technicky zdatným uživatelům.</p>
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass p-8 rounded-3xl"><div class="text-3xl mb-4">🤝</div><h4 class="text-xl font-bold text-white mb-3">Dokonalé podmínky ke spolupráci</h4><p class="text-slate-400 text-sm">Špičkové audio a video pro efektivní spolupráci.</p></div>
+                <div class="glass p-8 rounded-3xl"><div class="text-3xl mb-4">📅</div><h4 class="text-xl font-bold text-white mb-3">Efektivní plánování</h4><p class="text-slate-400 text-sm">S Logitech Tap je plánování schůzek bezproblémové.</p></div>
+                <div class="glass p-8 rounded-3xl"><div class="text-3xl mb-4">👁️</div><h4 class="text-xl font-bold text-white mb-3">Omračující obraz</h4><p class="text-slate-400 text-sm">98″ displej iiyama ProLite pro vynikající vizuální kontakt.</p></div>
             </div>
         </section>
-
-        <!-- Shrnutí -->
-        <section class="max-w-5xl mx-auto px-6 mb-24">
-            <div class="glass p-10 md:p-16 rounded-[40px] text-center relative border-[#00ea9a]/30">
-                <h2 class="text-sm font-bold text-[#00ea9a] uppercase tracking-[0.3em] mb-6">Shrnutí</h2>
-                <p class="text-2xl md:text-3xl font-light text-white leading-relaxed mb-6">Společnost vyjádřila maximální spokojenost s přizpůsobeným audiovizuálním řešením, které zásadně přispělo k modernizaci pracovního prostředí.</p>
-                <p class="text-lg text-slate-400">Díky odborným znalostem dodavatele se podařilo zlepšit komunikaci, zvýšit produktivitu a celkově optimalizovat spolupráci zaměstnanců.</p>
-            </div>
-        </section>
-
-        <!-- Fotogalerie k projektu -->
-        <section class="max-w-7xl mx-auto px-6 border-t border-white/5 pt-16">
-            <h2 class="text-2xl font-bold mb-8 text-center">Fotogalerie z realizace</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                <!-- Foto 1 -->
-                <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.1] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?auto=format&fit=crop&q=80&w=1200', 'Zasedací místnost', 'Celkový pohled na 98 palcový displej')">
-                    <img src="https://images.unsplash.com/photo-1585432959315-d9342fd58eb6?auto=format&fit=crop&q=80&w=600&h=600" alt="Zasedací místnost" class="portfolio-img w-full h-full object-cover">
-                </div>
-                <!-- Foto 2 -->
-                <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.1] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=1200', 'Logitech Tap', 'Ovládací panel na stole')">
-                    <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&q=80&w=600&h=600" alt="Logitech Tap" class="portfolio-img w-full h-full object-cover">
-                </div>
-                <!-- Foto 3 -->
-                <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.1] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=1200', 'Videokonference v praxi', 'Týmová spolupráce')">
-                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=600&h=600" alt="Videokonference" class="portfolio-img w-full h-full object-cover">
-                </div>
-                <!-- Foto 4 -->
-                <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.1] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=1200', 'Detail stolu', 'Náhledové displeje a mikrofony')">
-                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=600&h=600" alt="Detail stolu" class="portfolio-img w-full h-full object-cover">
-                </div>
-            </div>
-        </section>
-
     </main>
 
     <!-- ========================================== -->
     <!-- IT SPRÁVA CASE STUDY PAGE                  -->
     <!-- ========================================== -->
     <main id="it-sprava-page" class="page-content min-h-screen pt-32 pb-24">
-        
-        <!-- Hero Studie -->
         <section class="max-w-4xl mx-auto px-6 text-center mb-24">
             <div class="inline-block px-4 py-1 rounded-full border border-[#00ea9a]/30 text-[#00ea9a] text-xs font-bold mb-6 tracking-widest uppercase cursor-pointer hover:bg-[#00ea9a]/10 transition" onclick="showPage('home'); window.scrollTo({top: 0, behavior: 'instant'});">← Zpět na přehled</div>
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Konsolidace a správa IT <br><span class="gradient-text">v marketingové agentuře</span></h1>
-            <p class="text-xl text-slate-400 max-w-3xl mx-auto">Klient je rostoucí agentura o cca 50 lidech, všestranně zaměřená na online marketing. Růst počtu zaměstnanců a projektů přinesl potřebu profesionalizace správy IT, od nástupů a výstupů lidí přes správu zařízení a uživatelskou podporu až po zabezpečení dat a konzultace ohledně využívaných nástrojů.</p>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">IT správa <span class="gradient-text">marketingové agentury</span></h1>
+            <p class="text-xl text-slate-400 max-w-3xl mx-auto">Konsolidace a profesionalizace IT pro rostoucí agenturu o 50 lidech.</p>
         </section>
-
-        <!-- Identifikace & Realizace -->
-        <section class="max-w-7xl mx-auto px-6 mb-24">
-            <h2 class="text-3xl font-bold mb-8 text-center">Identifikace potřeb</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Potřeba 1 -->
-                <div class="glass p-8 rounded-3xl border-t border-white/10">
-                    <div class="text-2xl mb-4">📧</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Neefektivní využití Google Workspace</h3>
-                    <p class="text-slate-400 text-sm">Klient sice zčásti využíval Google Workspace, ale zaměstnanci používali osobní, nespravované Google účty. Na těch také byla velká část firemních dat. Klíčovým úkolem byla migrace na managované účty.</p>
-                </div>
-                <!-- Potřeba 2 -->
-                <div class="glass p-8 rounded-3xl border-t border-white/10">
-                    <div class="text-2xl mb-4">💻</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Evidence a správa zařízení</h3>
-                    <p class="text-slate-400 text-sm">Žádný nebo malý přehled o zařízeních. Lokální administrátorská oprávnění uživatelů pro všechna zařízení, což znamená významné bezpečnostní riziko. Síťové prvky ve skutečnosti nikdo neměl pod kontrolou.</p>
-                </div>
-                <!-- Potřeba 3 -->
-                <div class="glass p-8 rounded-3xl border-t border-white/10">
-                    <div class="text-2xl mb-4">👋</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Zdlouhavé procesy onboardingu</h3>
-                    <p class="text-slate-400 text-sm">Vysoká fluktuace v kombinaci s neefektivním procesem způsobovala časové ztráty. Za nákup a přípravu zařízení byla zodpovědná recepční bez IT školení.</p>
-                </div>
-                <!-- Potřeba 4 -->
-                <div class="glass p-8 rounded-3xl border-t border-white/10">
-                    <div class="text-2xl mb-4">🚪</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Rizikové offboardingy</h3>
-                    <p class="text-slate-400 text-sm">Odchod spolupracovníků vždy znamenal potíže se získáním přístupů k datům na účtu zaměstnance. Velmi riskantním bylo navíc to, že každý měl „pracovní“ účet jako svůj osobní Google účet.</p>
-                </div>
-                <!-- Potřeba 5 -->
-                <div class="glass p-8 rounded-3xl border-t border-white/10">
-                    <div class="text-2xl mb-4">🧠</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Absence IT konzultací</h3>
-                    <p class="text-slate-400 text-sm">Absence IT managementu vedla k nevhodným řešením mnoha IT problémů, které se pak táhly zpravidla velmi dlouho, často až do našeho převzetí správy.</p>
-                </div>
-                <!-- Potřeba 6 -->
-                <div class="glass p-8 rounded-3xl border-t border-white/10">
-                    <div class="text-2xl mb-4">⏳</div>
-                    <h3 class="text-xl font-bold text-white mb-3">Ztráta produktivního času</h3>
-                    <p class="text-slate-400 text-sm">Každý zaměstnanec musel IT agendu řešit stále dokola individuálně. Často nevěděli, na koho se s problémy obrátit, a mnoho problémů se dlouhodobě neřešilo.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Řešení -->
-        <section class="max-w-7xl mx-auto px-6 mb-24">
-            <div class="glass bg-slate-900/50 p-10 md:p-16 rounded-[40px] border border-white/5">
-                <h2 class="text-3xl font-bold mb-10 text-white border-b border-white/10 pb-6">Implementované řešení</h2>
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                    
-                    <!-- Levý sloupec: Seznam řešení -->
-                    <div class="space-y-8">
-                        <div class="flex gap-5 items-start">
-                            <div class="text-2xl mt-1 bg-white/5 w-12 h-12 flex items-center justify-center rounded-xl flex-shrink-0">☁️</div>
-                            <div>
-                                <strong class="text-white text-lg block mb-2">Plná migrace do Google Workspace</strong>
-                                <p class="text-slate-400 text-sm leading-relaxed">Provedli jsme kompletní migraci uživatelů, dat a mailserveru. Čelili jsme výzvám přenosu souborů z mrtvých účtů a změnám vlastnictví. Zrevidovali jsme souborový systém a oprávnění založili na principu skupin.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-5 items-start">
-                            <div class="text-2xl mt-1 bg-[#00a9ff]/10 w-12 h-12 flex items-center justify-center rounded-xl flex-shrink-0">🎛️</div>
-                            <div>
-                                <strong class="text-white text-lg block mb-2">Centrální správa zařízení</strong>
-                                <p class="text-slate-400 text-sm leading-relaxed">Zavedli jsme inventář v našem Asset management systému s agenty ve všech zařízeních pro monitoring a distribuci. Odlišili jsme administrátorský a uživatelský účet, převzali správu sítě, nastavili bezpečnostní pravidla a vyřešili zasedačky Google Meet.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-5 items-start">
-                            <div class="text-2xl mt-1 bg-[#00ea9a]/10 w-12 h-12 flex items-center justify-center rounded-xl flex-shrink-0">🔄</div>
-                            <div>
-                                <strong class="text-white text-lg block mb-2">Onboarding & offboarding</strong>
-                                <p class="text-slate-400 text-sm leading-relaxed">Nastavili jsme jasné a unifikované procesy. Obojí je nyní spuštěno vyplněním formuláře v Servicedesku, což odstartuje jasně definovaný, z velké části automatizovaný proces.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-5 items-start">
-                            <div class="text-2xl mt-1 bg-purple-500/10 w-12 h-12 flex items-center justify-center rounded-xl flex-shrink-0">🔐</div>
-                            <div>
-                                <strong class="text-white text-lg block mb-2">Google Workspace management</strong>
-                                <p class="text-slate-400 text-sm leading-relaxed">Po migraci jsme nastavili firmu k bezpečnému fungování: organizační jednotky (skupiny), vynucení bezpečnostních politik (MFA) a správné nastavení sdílení souborů.</p>
-                            </div>
-                        </div>
-                        <div class="flex gap-5 items-start">
-                            <div class="text-2xl mt-1 bg-orange-500/10 w-12 h-12 flex items-center justify-center rounded-xl flex-shrink-0">💡</div>
-                            <div>
-                                <strong class="text-white text-lg block mb-2">IT poradenství</strong>
-                                <p class="text-slate-400 text-sm leading-relaxed">Aplikací metodiky ITIL4 jsme ušetřili peníze a čas. Pomohli jsme v řešení zálohování, vzdáleném přístupu nebo v deploymentu marketingových nástrojů. Poskytli jsme také know-how při stěhování do nových prostor.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Pravý sloupec: Google Workspace Box + Obrázek -->
-                    <div class="space-y-8 sticky top-32">
-                        <div class="bg-gradient-to-br from-white/10 to-transparent p-8 rounded-3xl border border-[#00ea9a]/30 relative overflow-hidden">
-                            <div class="absolute -right-10 -top-10 text-9xl opacity-5">G</div>
-                            <h4 class="text-xl font-bold text-white mb-3 flex items-center gap-2">
-                                <span class="w-3 h-3 rounded-full bg-[#00ea9a]"></span> Proč Google Workspace?
-                            </h4>
-                            <p class="text-slate-400 text-sm leading-relaxed">
-                                Je to komplexní cloudová platforma umožňující efektivní spolupráci a správu dat odkudkoliv. Zahrnuje Gmail, Kalendář, Disk, Dokumenty, Meet a Admin Console. Pro marketingové agentury přináší obrovskou výhodu v jednoduchosti sdílení a reálné spolupráci na dokumentech bez nutnosti vlastní infrastruktury. Oproti konkurenci vyniká svou intuitivností, rychlostí nasazení a výborným poměrem cena/výkon.
-                            </p>
-                        </div>
-
-                        <div class="rounded-3xl overflow-hidden aspect-video border border-white/10 relative">
-                            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1200&h=800" alt="Google Workspace Setup" class="w-full h-full object-cover grayscale opacity-80">
-                            <div class="absolute inset-0 bg-gradient-to-tr from-[#00ea9a]/20 to-[#00a9ff]/20 mix-blend-overlay"></div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Benefity -->
         <section class="max-w-7xl mx-auto px-6 mb-24">
             <h2 class="text-3xl font-bold mb-12 text-center">Benefity pro klienta</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Benefit 1 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">🚀</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Zefektivnění onboarding procesu</h4>
-                    <p class="text-slate-400 text-sm">Nástup je nyní pevně daný proces, který začíná odesláním formuláře v Servicedesku, na což je navázané množství triggerů, které z větší části automaticky dokončí celý proces.</p>
-                </div>
-                <!-- Benefit 2 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">🗄️</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Konsolidace dat a oprávnění</h4>
-                    <p class="text-slate-400 text-sm">Najít a přenést klíčová data z desítek soukromých účtů (několik terabajtů) byla výzva. Dnes jsou všechna bezpečně uložená a pod plnou kontrolou ve firemním Google Drive.</p>
-                </div>
-                <!-- Benefit 3 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">⏱️</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Ušetření času zaměstnanců</h4>
-                    <p class="text-slate-400 text-sm">Zaměstnanci šetří čas tím, že nemusí řešit běžnou IT agendu. Reálné ušetření je ale v on a offboarding procesech, které nyní místo dvou dnů zaberou pouhé dvě hodiny.</p>
-                </div>
-                <!-- Benefit 4 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">🛡️</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Bezpečný offboarding</h4>
-                    <p class="text-slate-400 text-sm">Management se už neobává odchodů zaměstnanců a ztráty dat. Veškerá dokumentace je ve firemním Google Drive a přístupy jsou centrálně řízeny, kde má firma plnou kontrolu.</p>
-                </div>
-                <!-- Benefit 5 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">📱</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Kontrola nad zařízeními</h4>
-                    <p class="text-slate-400 text-sm">Klient má plnou kontrolu nad oprávněními, přístupy, daty i vybavením. Vše je spravované prostřednictvím pouze dvou aplikací: Google Workspace a Servicedesk Solverita.</p>
-                </div>
-                <!-- Benefit 6 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">📈</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Pevný IT základ</h4>
-                    <p class="text-slate-400 text-sm">Díky podpoře zkušených IT konzultantů může management rychle reagovat na nové výzvy a dělat informovaná, kvalifikovaná rozhodnutí, která posouvají firmu dál.</p>
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass p-8 rounded-3xl"><div class="text-3xl mb-4">🚀</div><h4 class="text-xl font-bold text-white mb-3">Zefektivnění onboardingu</h4><p class="text-slate-400 text-sm">Nástup je nyní pevně daný automatizovaný proces.</p></div>
+                <div class="glass p-8 rounded-3xl"><div class="text-3xl mb-4">🗄️</div><h4 class="text-xl font-bold text-white mb-3">Konsolidace dat</h4><p class="text-slate-400 text-sm">Všechna data bezpečně uložená ve firemním Google Drive.</p></div>
+                <div class="glass p-8 rounded-3xl"><div class="text-3xl mb-4">🛡️</div><h4 class="text-xl font-bold text-white mb-3">Bezpečný offboarding</h4><p class="text-slate-400 text-sm">Management se už neobává odchodů zaměstnanců a ztráty dat.</p></div>
             </div>
         </section>
-
-        <!-- Shrnutí -->
-        <section class="max-w-5xl mx-auto px-6 mb-24">
-            <div class="glass p-10 md:p-16 rounded-[40px] text-center relative border-[#00ea9a]/30">
-                <h2 class="text-sm font-bold text-[#00ea9a] uppercase tracking-[0.3em] mb-6">Závěrečné shrnutí</h2>
-                <p class="text-2xl md:text-3xl font-light text-white leading-relaxed mb-6">Naše spolupráce ukazuje, že i menší firma s přibližně 50 zaměstnanci může díky správně nastavené IT správě výrazně zvýšit svou efektivitu, bezpečnost a klid při každodenním provozu.</p>
-                <p class="text-lg text-slate-400">Digitalizace onboardingu, centralizace správy zařízení a zavedení Google Workspace přinesly výrazné časové úspory a odstranily chaos ve správě IT. Klient se díky tomu může naplno věnovat své hlavní činnosti — marketingu a kreativitě — s jistotou, že technické zázemí firmy funguje spolehlivě a roste s ní.</p>
-            </div>
-        </section>
-
-        <!-- Fotogalerie k projektu -->
-        <section class="max-w-7xl mx-auto px-6 border-t border-white/5 pt-16">
-            <h2 class="text-2xl font-bold mb-8 text-center">Fotogalerie z realizace</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                <!-- Foto 1 -->
-                <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.1] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=1200', 'Marketingová agentura', 'Moderní open space prostředí')">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=600&h=600" alt="Agentura" class="portfolio-img w-full h-full object-cover">
-                </div>
-                <!-- Foto 2 -->
-                <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.1] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&q=80&w=1200', 'Správa zařízení', 'Centrální evidence hardware')">
-                    <img src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&q=80&w=600&h=600" alt="Hardware" class="portfolio-img w-full h-full object-cover">
-                </div>
-                <!-- Foto 3 -->
-                <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.1] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=1200', 'IT Podpora', 'Zavedení efektivního Service Desku')">
-                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600&h=600" alt="Support" class="portfolio-img w-full h-full object-cover">
-                </div>
-                <!-- Foto 4 -->
-                <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.1] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=1200', 'Týmová spolupráce', 'Sjednocení a zabezpečení dat v cloudu')">
-                    <img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&q=80&w=600&h=600" alt="Spolupráce" class="portfolio-img w-full h-full object-cover">
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Závěr -->
-        <section class="max-w-3xl mx-auto px-6 text-center mt-24">
-            <h2 class="text-4xl md:text-5xl font-bold mb-6 italic">Roste vaše firma <span class="gradient-text">rychleji než IT?</span></h2>
-            <p class="text-xl text-slate-400 mb-10">Pojďme probrat, jak zkonsolidovat vaši síť, zabezpečit data a nastavit automatizované procesy.</p>
-            <button onclick="showPage('home'); setTimeout(() => { document.getElementById('kontakt').scrollIntoView({behavior: 'smooth'}) }, 100);" class="btn-gradient px-10 py-5 rounded-2xl font-bold text-slate-900 text-lg">Mám zájem o konzultaci</button>
-        </section>
-
     </main>
 
     <!-- ========================================== -->
     <!-- AV SÁL CASE STUDY PAGE                     -->
     <!-- ========================================== -->
     <main id="av-sal-page" class="page-content min-h-screen pt-32 pb-24">
-        
-        <!-- Hero Studie -->
         <section class="max-w-4xl mx-auto px-6 text-center mb-24">
             <div class="inline-block px-4 py-1 rounded-full border border-[#00ea9a]/30 text-[#00ea9a] text-xs font-bold mb-6 tracking-widest uppercase cursor-pointer hover:bg-[#00ea9a]/10 transition" onclick="showPage('home'); window.scrollTo({top: 0, behavior: 'instant'});">← Zpět na přehled</div>
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Audiovizuální řešení <br><span class="gradient-text">multifunkčního sálu</span></h1>
-            <p class="text-xl text-slate-400 max-w-3xl mx-auto">Přední česká veletržní správa si byla vědoma potřeby vytvořit moderní multifunkční sál s prvotřídní AV technikou. Cílem bylo vybudovat prostor, který kombinuje špičkový obraz, čistý zvuk a řízené osvětlení, a přitom zůstává snadno ovladatelný a rychle přizpůsobitelný pro různé typy akcí.</p>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">AV <span class="gradient-text">multifunkční sál</span></h1>
+            <p class="text-xl text-slate-400 max-w-3xl mx-auto">Špičkový obraz, precizní zvuk a inteligentní osvětlení pro veletržní prostory.</p>
         </section>
-
-        <!-- Identifikace & Realizace -->
-        <section class="max-w-7xl mx-auto px-6 mb-24">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="glass p-10 rounded-3xl border-t border-white/10">
-                    <div class="text-sm font-bold text-[#00a9ff] uppercase tracking-widest mb-2">Cíl</div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Dokonale optimalizovaný konferenční sál</h3>
-                    <p class="text-slate-400 text-lg">Společnost hledala audiovizuální řešení, které zajistí špičkový obraz, precizní zvuk a možnost inteligentního nasvícení celého prostoru.</p>
-                </div>
-                <div class="glass p-10 rounded-3xl border-t border-white/10">
-                    <div class="text-sm font-bold text-[#00ea9a] uppercase tracking-widest mb-2">Požadavek</div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Prostor snadný na ovládání a přestavbu</h3>
-                    <p class="text-slate-400 text-lg">Prostor měl být vybaven několika ovládacími centry a umožňovat rychlé přenastavení. Součástí byla i možnost připojení externích zařízení (zvukař, live-stream, vzdálení účastníci).</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Řešení -->
-        <section class="max-w-7xl mx-auto px-6 mb-24">
-            <div class="glass bg-slate-900/50 p-10 md:p-16 rounded-[40px] border border-white/5">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                    <div>
-                        <h2 class="text-3xl font-bold mb-6 text-white">Komplexní AV systém</h2>
-                        <p class="text-slate-400 mb-8 text-lg">Implementovali jsme komplexní AV systém s technologiemi značek Samsung, Sony, Sonance, Soundcraft a Relacart, který pokrývá všechny klíčové potřeby – od projekce a ozvučení až po osvětlení a režijní správu prostoru.</p>
-                        
-                        <div class="space-y-5">
-                            <div class="flex gap-4 items-start">
-                                <div class="text-2xl mt-1">📽️</div>
-                                <div><strong class="text-white text-lg">Projektory SONY & Rámová plátna</strong><br><span class="text-slate-400 text-sm">Výkonný laserový projektor VPL-PHZ51 pro ostrý a jasný obraz i v plně osvětleném sále s pevnou konstrukcí Wall Frame Pro pro maximální kvalitu projekce.</span></div>
-                            </div>
-                            <div class="flex gap-4 items-start">
-                                <div class="text-2xl mt-1">📺</div>
-                                <div><strong class="text-white text-lg">Náhledové monitory SAMSUNG QB43B</strong><br><span class="text-slate-400 text-sm">Přehled o prezentovaném obsahu přímo z pódia či režie pro bezchybnou koordinaci programu.</span></div>
-                            </div>
-                            <div class="flex gap-4 items-start">
-                                <div class="text-2xl mt-1">🎛️</div>
-                                <div><strong class="text-white text-lg">Mixpult Soundcraft & Blackmagic ATEM</strong><br><span class="text-slate-400 text-sm">Digitální mix Ui16R s možností dálkového ovládání a 8 vstupový přepínač ATEM Mini Extreme pro živé vysílání a pokročilé funkce.</span></div>
-                            </div>
-                            <div class="flex gap-4 items-start">
-                                <div class="text-2xl mt-1">🔊</div>
-                                <div><strong class="text-white text-lg">Ozvučení Sonance</strong><br><span class="text-slate-400 text-sm">Špičkový instalační zesilovač SONAMP DSP a reproduktory řady PS poskytující čistý, srozumitelný a vyvážený zvuk v celém prostoru.</span></div>
-                            </div>
-                            <div class="flex gap-4 items-start">
-                                <div class="text-2xl mt-1">🎙️</div>
-                                <div><strong class="text-white text-lg">Mikrofonní set RELACART UR-260D</strong><br><span class="text-slate-400 text-sm">Dvoukanálový bezdrátový systém pro flexibilní pohyb řečníků a bezchybný přenos hlasu doplněný o pultový mikrofon UD-1.</span></div>
-                            </div>
-                            <div class="flex gap-4 items-start">
-                                <div class="text-2xl mt-1">💡</div>
-                                <div><strong class="text-white text-lg">Světla EUROLITE LED TMH-H240</strong><br><span class="text-slate-400 text-sm">Inteligentní LED otočná hlavice (6x 40W QCL RGBW), kde lze každou LED diodu ovládat samostatně.</span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rounded-3xl overflow-hidden aspect-square border border-white/10 relative sticky top-32">
-                        <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=1200&h=1200" alt="Multifunkční sál" class="w-full h-full object-cover grayscale opacity-80">
-                        <div class="absolute inset-0 bg-gradient-to-tr from-[#00ea9a]/20 to-[#00a9ff]/20 mix-blend-overlay"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Benefity -->
-        <section class="max-w-7xl mx-auto px-6 mb-24">
-            <h2 class="text-3xl font-bold mb-12 text-center">Benefity pro klienta</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Benefit 1 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">🤝</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Dokonalé podmínky pro spolupráci</h4>
-                    <p class="text-slate-400 text-sm">Křišťálově čistý zvuk i obraz podporuje efektivní komunikaci mezi účastníky. Možnost připojení externích zařízení a inteligentní ovládání světel a AV techniky umožňuje rychlé přizpůsobení scénáře bez nutnosti složitého nastavování.</p>
-                </div>
-                <!-- Benefit 2 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">🎭</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Víceúčelové řešení</h4>
-                    <p class="text-slate-400 text-sm">Jednotlivé zóny sálu lze rychle přenastavit pro konferenci, koncert či workshop. Více ovládacích center umožňuje nezávislou práci týmů a flexibilní systém režie umožňuje plynulou integraci živé hudby i online přenosů.</p>
-                </div>
-                <!-- Benefit 3 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">🔊</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Omračující obraz a zvuk</h4>
-                    <p class="text-slate-400 text-sm">Laserový projektor a rámové plátno zajišťují ostrý, kontrastní a jasný obraz. Reproduktory Sonance poskytují vyvážený zvuk a mikrofony Relacart zachytí každý hlas s vysokou citlivostí.</p>
-                </div>
-                <!-- Benefit 4 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">🎛️</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Intuitivní ovládání a efektivita</h4>
-                    <p class="text-slate-400 text-sm">Jednotný ovládací systém umožňuje rychlé nastavení scénáře jedním klikem. Minimalizuje potřebu techniků a šetří čas při přípravě akcí.</p>
-                </div>
-                <!-- Benefit 5 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">🧩</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Budoucí rozšíření a modularita</h4>
-                    <p class="text-slate-400 text-sm">Systém je navržen modulárně – lze snadno přidávat nové zařízení nebo aktualizovat dle scénářů použití. Podporuje rostoucí potřeby společnosti bez nutnosti kompletního přestavování sálu.</p>
-                </div>
-                <!-- Benefit 6 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">✨</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Moderní prostor</h4>
-                    <p class="text-slate-400 text-sm">Estetické a technologicky vyspělé prostředí podporuje image společnosti a zanechává silný první dojem. Jednoduchá obsluha snižuje požadavky na techniky a zajišťuje dlouhodobou investiční hodnotu.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Shrnutí -->
-        <section class="max-w-5xl mx-auto px-6 mb-24">
-            <div class="glass p-10 md:p-16 rounded-[40px] text-center relative border-[#00ea9a]/30">
-                <h2 class="text-sm font-bold text-[#00ea9a] uppercase tracking-[0.3em] mb-6">Shrnutí</h2>
-                <p class="text-2xl md:text-3xl font-light text-white leading-relaxed mb-6">Nově vybudovaný multifunkční sál splňuje všechny požadavky na moderní AV prostředí.</p>
-                <p class="text-lg text-slate-400">Díky kombinaci špičkových technologií a snadného ovládání se z něj stal flexibilní prostor, který dokáže hostit jak menší jednání, tak velké konference a kulturní akce. Výsledkem je prostředí, které inspiruje, zaujme a podporuje úspěšnou spolupráci a naplňuje požadavky pořadatelů i účastníků.</p>
-            </div>
-        </section>
-
-        <!-- Fotogalerie k projektu -->
-        <section class="max-w-7xl mx-auto px-6 border-t border-white/5 pt-16">
-            <h2 class="text-2xl font-bold mb-8 text-center">Fotogalerie z realizace</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                <!-- Foto 1 -->
-                <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.1] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=1200', 'Konferenční sál', 'Celkový pohled do sálu')">
-                    <img src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?auto=format&fit=crop&q=80&w=600&h=600" alt="Konferenční sál" class="portfolio-img w-full h-full object-cover">
-                </div>
-                <!-- Foto 2 -->
-                <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.1] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&q=80&w=1200', 'Režie a pult', 'Mixpult a ovládání')">
-                    <img src="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&q=80&w=600&h=600" alt="Mixpult" class="portfolio-img w-full h-full object-cover">
-                </div>
-                <!-- Foto 3 -->
-                <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.1] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1516280440502-61e868a2ce47?auto=format&fit=crop&q=80&w=1200', 'Osvětlovací technika', 'Inteligentní LED hlavice')">
-                    <img src="https://images.unsplash.com/photo-1516280440502-61e868a2ce47?auto=format&fit=crop&q=80&w=600&h=600" alt="Osvětlení" class="portfolio-img w-full h-full object-cover">
-                </div>
-                <!-- Foto 4 -->
-                <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.1] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=1200', 'Projekce a zvuk', 'Pohled na pódium')">
-                    <img src="https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80&w=600&h=600" alt="Pódium" class="portfolio-img w-full h-full object-cover">
-                </div>
-            </div>
-        </section>
-
     </main>
 
     <!-- ========================================== -->
     <!-- INSTALACE MONITORŮ CASE STUDY PAGE         -->
     <!-- ========================================== -->
     <main id="instalace-monitoru-page" class="page-content min-h-screen pt-32 pb-24">
-        
-        <!-- Hero Studie -->
         <section class="max-w-4xl mx-auto px-6 text-center mb-24">
             <div class="inline-block px-4 py-1 rounded-full border border-[#00ea9a]/30 text-[#00ea9a] text-xs font-bold mb-6 tracking-widest uppercase cursor-pointer hover:bg-[#00ea9a]/10 transition" onclick="showPage('home'); window.scrollTo({top: 0, behavior: 'instant'});">← Zpět na přehled</div>
-            <h1 class="text-4xl md:text-6xl font-bold mb-6">Klientská zařízení <br><span class="gradient-text">instalace monitorů</span></h1>
-            <p class="text-xl text-slate-400 max-w-3xl mx-auto">Klient, společnost s desítkami zaměstnanců v pražské centrále, potřeboval modernizovat své pracovní prostředí. Cílem bylo zajistit nové monitory pro více než 200 pracovních míst s důrazem na ergonomii, jednotný design a důraz na termín předání.</p>
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Instalace <span class="gradient-text">monitorů</span></h1>
+            <p class="text-xl text-slate-400 max-w-3xl mx-auto">400 monitorů za 2 dny — kompletní realizace na klíč.</p>
         </section>
-
-        <!-- Identifikace & Realizace -->
-        <section class="max-w-7xl mx-auto px-6 mb-24">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="glass p-10 rounded-3xl border-t border-white/10">
-                    <div class="text-sm font-bold text-[#00a9ff] uppercase tracking-widest mb-2">Identifikace potřeb</div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Dokonale optimalizované pracovní prostředí</h3>
-                    <p class="text-slate-400 text-lg">Daná společnost se stěhovala do rekonstruovaných kanceláří a současně s modernizací a změnou prostředí chtěla vyměnit současná klientská zařízení za nová a modernější.</p>
-                </div>
-                <div class="glass p-10 rounded-3xl border-t border-white/10">
-                    <div class="text-sm font-bold text-[#00ea9a] uppercase tracking-widest mb-2">Provedení</div>
-                    <h3 class="text-2xl font-bold text-white mb-4">Realizace na klíč od A do Z</h3>
-                    <p class="text-slate-400 text-lg">Byli si vědomi toho, že celá změna musí proběhnout rychle, bez účasti a pomoci zaměstnanců IT/backoffice, mimo pracovní dobu a v návaznosti na všechny předešlé profese rekonstrukce tak, aby nedošlo k narušení termínu otevření nových prostor.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Řešení -->
-        <section class="max-w-7xl mx-auto px-6 mb-24">
-            <div class="glass bg-slate-900/50 p-10 md:p-16 rounded-[40px] border border-white/5">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h2 class="text-3xl font-bold mb-6 text-white">Řešení</h2>
-                        <p class="text-slate-400 mb-6 text-lg">Náš tým zajistil kompletní realizaci projektu na klíč – od výběru a dodání vhodných monitorů, klávesnic a myší, vybalení a odbornou instalaci až po ekologickou likvidaci obalového materiálu.</p>
-                        <p class="text-slate-400 mb-6 text-lg">Protože se pracovní místa nacházela v otevřeném prostoru, byl zde velice důležitý i cable management a důraz na celkovou estetiku nejen nad, ale i pod stoly.</p>
-                        <p class="text-slate-400 text-lg">Celá instalace proběhla v pečlivě naplánovaných krocích tak, aby vše odpovídalo požadavkům klienta na probíhající omezení a zároveň byla nutná koordinace kroků s firmami, které instalovaly nábytek, osazovaly květiny a zajišťovaly úklid.</p>
-                    </div>
-                    <div class="rounded-3xl overflow-hidden aspect-video border border-white/10 relative">
-                        <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?auto=format&fit=crop&q=80&w=1200&h=800" alt="Instalace v open space kanceláři" class="w-full h-full object-cover grayscale opacity-80">
-                        <div class="absolute inset-0 bg-gradient-to-tr from-[#00ea9a]/20 to-[#00a9ff]/20 mix-blend-overlay"></div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Benefity -->
-        <section class="max-w-7xl mx-auto px-6 mb-24">
-            <h2 class="text-3xl font-bold mb-12 text-center">Benefity</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Benefit 1 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">📦</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Komplexní realizace na klíč</h4>
-                    <p class="text-slate-400 text-sm">Celý projekt proběhl formou služby „na klíč“ – od výběru vhodného hardware přes logistiku, instalaci a kabelový management až po evidenci a ekologickou likvidaci obalů. Klient nemusel zajišťovat žádné dodatečné kapacity ani koordinovat více dodavatelů.</p>
-                </div>
-                <!-- Benefit 2 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">⏱️</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Bez přerušení provozu společnosti</h4>
-                    <p class="text-slate-400 text-sm">Instalace probíhala výhradně mimo pracovní dobu, díky čemuž nebyl narušen termín otevření nových prostor firmy. Zaměstnanci mohli po příchodu do kanceláře okamžitě využívat plně funkční a připravená pracoviště.</p>
-                </div>
-                <!-- Benefit 3 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">💡</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Úspora času a interních zdrojů</h4>
-                    <p class="text-slate-400 text-sm">Díky profesionální realizaci odpadla potřeba zapojení interního IT oddělení či samotných zaměstnanců. Vše bylo připraveno efektivně a bez dodatečné administrativní či technické zátěže. Součástí byla i evidence sériových čísel vůči asset systému zákazníka a oštítkování jednotlivých monitorů.</p>
-                </div>
-                <!-- Benefit 4 -->
-                <div class="glass p-8 rounded-3xl">
-                    <div class="text-3xl mb-4">♻️</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Ekologická likvidace odpadu</h4>
-                    <p class="text-slate-400 text-sm">Součástí služby byla i odpovědná likvidace obalového materiálu a elektroodpadu, čímž se eliminovala nutnost řešit logistiku a ekologické povinnosti po instalaci.</p>
-                </div>
-                <!-- Benefit 5 -->
-                <div class="glass p-8 rounded-3xl lg:col-span-2">
-                    <div class="text-3xl mb-4">✨</div>
-                    <h4 class="text-xl font-bold text-white mb-3">Zvýšení komfortu a estetiky pracovního prostředí</h4>
-                    <p class="text-slate-400 text-sm">Nové monitory a důsledný cable management přinesly lepší ergonomii, čistší design a jednotný vizuální standard celé kanceláře. Výsledkem je moderní a reprezentativní pracovní prostředí podporující produktivitu.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Shrnutí -->
-        <section class="max-w-5xl mx-auto px-6 mb-24">
-            <div class="glass p-10 md:p-16 rounded-[40px] text-center relative border-[#00ea9a]/30">
-                <h2 class="text-sm font-bold text-[#00ea9a] uppercase tracking-[0.3em] mb-6">Shrnutí</h2>
-                <p class="text-2xl md:text-3xl font-light text-white leading-relaxed mb-6">Během pouhých dvou dnů jsme úspěšně nainstalovali 400 monitorů na jednotlivé pracovní stanice. Nové vybavení přineslo zaměstnancům vyšší komfort při práci, jednotný vizuální standard kanceláří a efektivnější využití pracovního prostoru.</p>
-                <p class="text-lg text-slate-400">Díky pečlivé koordinaci a zkušenému týmu byla zakázka dokončena včas, bez komplikací a s maximální spokojeností klienta.</p>
-            </div>
-        </section>
-
-        <!-- Fotogalerie k projektu -->
-        <section class="max-w-7xl mx-auto px-6 border-t border-white/5 pt-16">
-            <h2 class="text-2xl font-bold mb-8 text-center">Fotogalerie z realizace</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
-                <!-- Foto 1 -->
-                <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.1] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=1200', 'Moderní pracoviště', 'Dokončená instalace monitorů')">
-                    <img src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&q=80&w=600&h=600" alt="Pracoviště" class="portfolio-img w-full h-full object-cover">
-                </div>
-                <!-- Foto 2 -->
-                <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.1] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&q=80&w=1200', 'Příprava prostor', 'Organizace před instalací')">
-                    <img src="https://images.unsplash.com/photo-1497215842964-222b430dc094?auto=format&fit=crop&q=80&w=600&h=600" alt="Příprava" class="portfolio-img w-full h-full object-cover">
-                </div>
-                <!-- Foto 3 -->
-                <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.1] hover:z-20 hover:shadow-[0_0_20px_rgba(0,234,154,0.3)] border border-transparent hover:border-[#00ea9a]/50" onclick="openLightbox('https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&q=80&w=1200', 'Cable Management', 'Čistý design pracovního stolu')">
-                    <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&q=80&w=600&h=600" alt="Cable Management" class="portfolio-img w-full h-full object-cover">
-                </div>
-                <!-- Foto 4 -->
-                <div class="portfolio-item overflow-hidden rounded-xl relative group cursor-pointer aspect-square transition-all duration-300 hover:scale-[1.1] hover:z-20 hover:shadow-[0_0_20px_rgba(0,169,255,0.3)] border border-transparent hover:border-[#00a9ff]/50" onclick="openLightbox('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1200', 'Otevřený prostor', 'Sjednocený vizuální standard celé kanceláře')">
-                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=600&h=600" alt="Open Space" class="portfolio-img w-full h-full object-cover">
-                </div>
-            </div>
-        </section>
-
     </main>
 
     <!-- Patička -->
     <footer class="py-12 border-t border-white/5 text-slate-500">
         <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
             <div class="flex items-center gap-2 opacity-80 hover:opacity-100 transition cursor-pointer" onclick="showPage('home'); window.scrollTo({top: 0, behavior: 'smooth'});">
-                <img src="Logo Solverita_black.png" alt="Solverita znak" class="h-5 w-auto">
+                <img src="Logo_Solverita_black.png" alt="Solverita znak" class="h-5 w-auto">
                 <span class="font-bold text-white text-base uppercase tracking-widest">Solverita</span>
             </div>
             <div class="flex gap-8 text-sm">
@@ -1272,93 +641,77 @@
                 <a href="https://www.linkedin.com/company/solverita/" class="hover:text-white transition">LinkedIn</a>
             </div>
             <p class="text-xs">© 2026 Solverita s.r.o. | Řešení z podstaty problému.</p>
-    </div>
-</footer>
+        </div>
+    </footer>
 
-<!-- Lightbox Modal -->
-<div id="lightbox" class="fixed inset-0 z-[100] bg-slate-900/95 hidden flex-col justify-center items-center opacity-0 transition-opacity duration-300 backdrop-blur-md" onclick="closeLightbox()">
-    <button class="absolute top-6 right-6 text-white hover:text-[#00ea9a] transition text-5xl font-light" onclick="closeLightbox()">&times;</button>
-    <div class="relative max-w-[95vw] max-h-[85vh] flex flex-col items-center" onclick="event.stopPropagation()">
-        <img id="lightbox-img" src="" alt="Náhled fotky" class="max-w-full max-h-[75vh] rounded-xl shadow-2xl object-contain transition-transform duration-300 scale-95">
-        <div id="lightbox-caption" class="text-white text-center mt-6">
-            <h4 id="lightbox-title" class="text-2xl font-bold"></h4>
-            <p id="lightbox-desc" class="text-[#00ea9a] text-sm mt-2 tracking-wide uppercase"></p>
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="fixed inset-0 z-[100] bg-slate-900/95 hidden flex-col justify-center items-center opacity-0 transition-opacity duration-300 backdrop-blur-md" onclick="closeLightbox()">
+        <button class="absolute top-6 right-6 text-white hover:text-[#00ea9a] transition text-5xl font-light" onclick="closeLightbox()">&times;</button>
+        <div class="relative max-w-[95vw] max-h-[85vh] flex flex-col items-center" onclick="event.stopPropagation()">
+            <img id="lightbox-img" src="" alt="Náhled fotky" class="max-w-full max-h-[75vh] rounded-xl shadow-2xl object-contain transition-transform duration-300 scale-95">
+            <div id="lightbox-caption" class="text-white text-center mt-6">
+                <h4 id="lightbox-title" class="text-2xl font-bold"></h4>
+                <p id="lightbox-desc" class="text-[#00ea9a] text-sm mt-2 tracking-wide uppercase"></p>
+            </div>
         </div>
     </div>
-</div>
 
-<script>
-    function toggleContactForm() {
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+        function toggleContactForm() {
             const msg = document.getElementById('contact-success');
             msg.classList.remove('hidden');
             msg.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
 
-        // SPA Navigation logic
         function showPage(pageId) {
             const targetPage = document.getElementById(pageId + '-page');
             const isAlreadyActive = targetPage && targetPage.classList.contains('active');
 
-            // Skryje všechny stránky
             document.querySelectorAll('.page-content').forEach(el => {
                 el.classList.remove('active');
             });
             
-            // Zobrazí vybranou stránku
             if (targetPage) {
                 targetPage.classList.add('active');
             }
             
-            // Vyroluje nahoru pouze pokud dochází ke změně podstránky (např. Proxmox -> Home).
-            // Pokud klikáme na odkaz (např. href="#pristup") na už aktivní stránce, 
-            // nescrollujeme násilně na nulu, ale necháme prohlížeč plynule sjet k sekci.
             if (!isAlreadyActive) {
-            window.scrollTo({ top: 0, behavior: 'instant' });
+                window.scrollTo({ top: 0, behavior: 'instant' });
+            }
         }
-    }
 
-    // Lightbox logika pro fotogalerii
-    function openLightbox(src, title, desc) {
-        const lightbox = document.getElementById('lightbox');
-        const img = document.getElementById('lightbox-img');
-        const titleEl = document.getElementById('lightbox-title');
-        const descEl = document.getElementById('lightbox-desc');
+        function openLightbox(src, title, desc) {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+            const titleEl = document.getElementById('lightbox-title');
+            const descEl = document.getElementById('lightbox-desc');
 
-        img.src = src;
-        titleEl.textContent = title;
-        descEl.textContent = desc;
+            img.src = src;
+            titleEl.textContent = title;
+            descEl.textContent = desc;
 
-        lightbox.classList.remove('hidden');
-        lightbox.classList.add('flex');
-        
-        // Malé zpoždění pro plynulou animaci
-        setTimeout(() => {
-            lightbox.classList.remove('opacity-0');
-            img.classList.remove('scale-95');
-            img.classList.add('scale-100');
-        }, 10);
-    }
-
-    function closeLightbox() {
-        const lightbox = document.getElementById('lightbox');
-        const img = document.getElementById('lightbox-img');
-
-        lightbox.classList.add('opacity-0');
-        img.classList.remove('scale-100');
-        img.classList.add('scale-95');
-
-        setTimeout(() => {
-            lightbox.classList.add('hidden');
-            lightbox.classList.remove('flex');
-        }, 300);
-    }
-
-    // Zavření lightboxu pomocí ESC
-    document.addEventListener('keydown', function(event) {
-        if (event.key === "Escape" && !document.getElementById('lightbox').classList.contains('hidden')) {
-            closeLightbox();
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            
+            setTimeout(() => {
+                lightbox.classList.remove('opacity-0');
+                img.classList.remove('scale-95');
+                img.classList.add('scale-100');
+            }, 10);
         }
-    });
-</script>
-</body>
-</html>
+
+        function closeLightbox() {
+            const lightbox = document.getElementById('lightbox');
+            const img = document.getElementById('lightbox-img');
+
+            lightbox.classList.add('opacity-0');
+            img.classList.remove('scale-100');
+            img.classList.add('scale-95');
+
+            setTimeout(() => {
+                lightbox.classList.add('hidden');
+                lightbox.classList.remove('flex');
+            }, 300);
+        }
+
+        document.addEven
