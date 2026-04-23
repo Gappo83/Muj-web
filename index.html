@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -12,16 +11,17 @@
         h1, h2, h3, .font-lexend { font-family: 'Lexend Deca', sans-serif; }
         .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
         .glass-hover:hover { background: rgba(255, 255, 255, 0.08); border-color: rgba(0, 234, 154, 0.5); transform: translateY(-3px); }
-
+        
         /* Ochrana proti oříznutí kurzívy u gradient textu (přidán padding-right) */
-        .gradient-text { background: linear-gradient(90deg, #00ea9a, #00a9ff); -webkit-background-clip: text; -webkit-text-fill-color: transparent; padding-right: 0.15em; }
-
+        .gradient-text { background: linear-gradient(90deg, #00ea9a, #00a9ff); -webkit-background-clip
+            : text; -webkit-text-fill-color: transparent; padding-right: 0.15em; }
+        
         .btn-gradient { background: linear-gradient(135deg, #00ea9a 0%, #00a9ff 100%); transition: all 0.3s ease; }
         .btn-gradient:hover { transform: translateY(-2px); box-shadow: 0 10px 25px -10px #00ea9a; opacity: 0.9; }
         .service-card:hover { border-color: #00ea9a; background: rgba(255, 255, 255, 0.05); }
         .logo-grid img { filter: grayscale(100%) brightness(200%); opacity: 0.6; transition: all 0.4s; }
         .logo-grid img:hover { filter: grayscale(0%) brightness(100%); opacity: 1; transform: scale(1.1); }
-
+        
         /* Portfolio image hover */
         .portfolio-img { transition: transform 0.5s ease, filter 0.5s ease; filter: grayscale(30%) brightness(80%); }
         .portfolio-item:hover .portfolio-img { transform: scale(1.05); filter: grayscale(0%) brightness(100%); }
@@ -29,7 +29,7 @@
         /* Skrytí sekcí pro simulaci SPA */
         .page-content { display: none; opacity: 0; transition: opacity 0.4s ease; }
         .page-content.active { display: block; opacity: 1; }
-
+        
         /* Tabulka */
         .custom-table th { background: rgba(255,255,255,0.05); color: #00ea9a; }
         .custom-table tr { border-bottom: 1px solid rgba(255,255,255,0.05); }
@@ -56,7 +56,7 @@
             </div>
             <div class="flex items-center gap-4">
                 <a href="https://eshop.solverita.cz/" class="hidden sm:block text-sm border border-white/20 px-4 py-2 rounded-xl hover:bg-white/10 transition">🛒 Eshop</a>
-                <button id="hamburger-btn" type="button" aria-label="Otevřít menu" class="lg:hidden text-[#00ea9a]">
+                <button id="hamburger-btn" class="lg:hidden text-[#00ea9a]">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
                 </button>
             </div>
@@ -80,8 +80,8 @@
     <!-- ========================================== -->
     <!-- HOME PAGE CONTENT                          -->
     <!-- ========================================== -->
-    <main id="home-page" aria-label="Domovská stránka" class="page-content active">
-
+    <main id="home-page" class="page-content active">
+        
         <!-- Hero Sekce -->
         <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
             <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full opacity-20 pointer-events-none">
@@ -102,7 +102,7 @@
                     <a href="#pristup" onclick="showPage('home')" class="bg-white/5 hover:bg-white/10 border border-white/10 px-10 py-5 rounded-2xl font-bold transition text-lg">Jak to děláme jinak</a>
                 </div>
             </div>
-
+            
             <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-30">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7-7-7m14-8l-7 7-7-7"></path></svg>
             </div>
@@ -338,13 +338,13 @@
                 </div>
             </div>
         </section>
-
+        
         <!-- Kontakt -->
         <section id="kontakt" class="py-32 relative border-t border-white/5">
             <div class="max-w-5xl mx-auto px-6 text-center">
                 <h2 class="text-5xl md:text-7xl font-bold mb-6 italic">Udělejte si v IT <span class="gradient-text">pořádek.</span></h2>
                 <p class="text-xl text-slate-400 mb-12 max-w-3xl mx-auto">Rádi s vámi nezávazně probereme, kde vám utíkají peníze a proč věci nefungují tak rychle, jak by mohly.</p>
-
+                
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16 text-left">
                     <!-- Kancelář -->
                     <div class="glass p-8 rounded-3xl">
@@ -353,7 +353,7 @@
                         <p class="text-lg font-bold text-white">190 00 Praha 9</p>
                         <p class="text-slate-400 mt-4 text-sm">Stavíme se u vás, nebo dorazte k nám na dobrou kávu.</p>
                     </div>
-
+                    
                     <!-- Fakturace -->
                     <div class="glass p-8 rounded-3xl">
                         <p class="text-white text-xs uppercase font-bold tracking-widest mb-3">Fakturační údaje</p>
@@ -432,8 +432,8 @@
     <!-- ========================================== -->
     <!-- PROXMOX CASE STUDY PAGE                    -->
     <!-- ========================================== -->
-    <div id="proxmox-page" class="page-content min-h-screen pt-32 pb-24">
-
+    <main id="proxmox-page" class="page-content min-h-screen pt-32 pb-24">
+        
         <!-- Hero Studie -->
         <section class="max-w-4xl mx-auto px-6 text-center mb-24">
             <div class="inline-block px-4 py-1 rounded-full border border-[#00ea9a]/30 text-[#00ea9a] text-xs font-bold mb-6 tracking-widest uppercase cursor-pointer hover:bg-[#00ea9a]/10 transition" onclick="showPage('home'); window.scrollTo({top: 0, behavior: 'instant'});">← Zpět na přehled</div>
@@ -465,7 +465,7 @@
                     <div>
                         <h2 class="text-3xl font-bold mb-6 text-white">Řešení: Proxmox Virtual Environment</h2>
                         <p class="text-slate-400 mb-8 text-lg">Proxmox VE (Virtual Environment) je open source virtualizační platforma určená pro správu virtuálních strojů a kontejnerů. Kombinuje technologie KVM a LXC s intuitivním webovým rozhraním, podporou vysoké dostupnosti, zálohováním, replikací a snadným vytvářením clusterů. Díky své stabilitě, flexibilitě a nulovým licenčním nákladům představuje atraktivní alternativu ke komerčním řešením, jako je VMware vSphere.</p>
-
+                        
                         <div class="grid grid-cols-2 gap-6 mt-10">
                             <div class="border-l-4 border-[#00ea9a] pl-6">
                                 <div class="text-4xl font-bold text-white mb-1">24/7</div>
@@ -610,15 +610,15 @@
         <section class="max-w-3xl mx-auto px-6 text-center">
             <h2 class="text-4xl md:text-5xl font-bold mb-6 italic">Chcete také uniknout <span class="gradient-text">licenční pasti?</span></h2>
             <p class="text-xl text-slate-400 mb-10">Pojďme probrat, jak bychom Proxmox VE a zlevnění IT integrovali přímo do vašeho prostředí.</p>
-            <button type="button" onclick="showPage('home'); setTimeout(() => { document.getElementById('kontakt').scrollIntoView({behavior: 'smooth'}) }, 100);" class="btn-gradient px-10 py-5 rounded-2xl font-bold text-slate-900 text-lg">Mám zájem o konzultaci</button>
+            <button onclick="showPage('home'); setTimeout(() => { document.getElementById('kontakt').scrollIntoView({behavior: 'smooth'}) }, 100);" class="btn-gradient px-10 py-5 rounded-2xl font-bold text-slate-900 text-lg">Mám zájem o konzultaci</button>
         </section>
 
-    </div>
+    </main>
 
     <!-- ========================================== -->
     <!-- VIDEOKONFERENCE CASE STUDY PAGE            -->
     <!-- ========================================== -->
-    <div id="videokonference-page" class="page-content min-h-screen pt-32 pb-24">
+    <main id="videokonference-page" class="page-content min-h-screen pt-32 pb-24">
         <section class="max-w-4xl mx-auto px-6 text-center mb-24">
             <div class="inline-block px-4 py-1 rounded-full border border-[#00ea9a]/30 text-[#00ea9a] text-xs font-bold mb-6 tracking-widest uppercase cursor-pointer hover:bg-[#00ea9a]/10 transition" onclick="showPage('home'); window.scrollTo({top: 0, behavior: 'instant'});">← Zpět na přehled</div>
             <h1 class="text-4xl md:text-6xl font-bold mb-6">Videokonferenční <span class="gradient-text">místnost</span></h1>
@@ -632,12 +632,12 @@
                 <div class="glass p-8 rounded-3xl"><div class="text-3xl mb-4">👁️</div><h4 class="text-xl font-bold text-white mb-3">Omračující obraz</h4><p class="text-slate-400 text-sm">98″ displej iiyama ProLite pro vynikající vizuální kontakt.</p></div>
             </div>
         </section>
-    </div>
+    </main>
 
     <!-- ========================================== -->
     <!-- IT SPRÁVA CASE STUDY PAGE                  -->
     <!-- ========================================== -->
-    <div id="it-sprava-page" class="page-content min-h-screen pt-32 pb-24">
+    <main id="it-sprava-page" class="page-content min-h-screen pt-32 pb-24">
         <section class="max-w-4xl mx-auto px-6 text-center mb-24">
             <div class="inline-block px-4 py-1 rounded-full border border-[#00ea9a]/30 text-[#00ea9a] text-xs font-bold mb-6 tracking-widest uppercase cursor-pointer hover:bg-[#00ea9a]/10 transition" onclick="showPage('home'); window.scrollTo({top: 0, behavior: 'instant'});">← Zpět na přehled</div>
             <h1 class="text-4xl md:text-6xl font-bold mb-6">IT správa <span class="gradient-text">marketingové agentury</span></h1>
@@ -651,29 +651,29 @@
                 <div class="glass p-8 rounded-3xl"><div class="text-3xl mb-4">🛡️</div><h4 class="text-xl font-bold text-white mb-3">Bezpečný offboarding</h4><p class="text-slate-400 text-sm">Management se už neobává odchodů zaměstnanců a ztráty dat.</p></div>
             </div>
         </section>
-    </div>
+    </main>
 
     <!-- ========================================== -->
     <!-- AV SÁL CASE STUDY PAGE                     -->
     <!-- ========================================== -->
-    <div id="av-sal-page" class="page-content min-h-screen pt-32 pb-24">
+    <main id="av-sal-page" class="page-content min-h-screen pt-32 pb-24">
         <section class="max-w-4xl mx-auto px-6 text-center mb-24">
             <div class="inline-block px-4 py-1 rounded-full border border-[#00ea9a]/30 text-[#00ea9a] text-xs font-bold mb-6 tracking-widest uppercase cursor-pointer hover:bg-[#00ea9a]/10 transition" onclick="showPage('home'); window.scrollTo({top: 0, behavior: 'instant'});">← Zpět na přehled</div>
             <h1 class="text-4xl md:text-6xl font-bold mb-6">AV <span class="gradient-text">multifunkční sál</span></h1>
             <p class="text-xl text-slate-400 max-w-3xl mx-auto">Špičkový obraz, precizní zvuk a inteligentní osvětlení pro veletržní prostory.</p>
         </section>
-    </div>
+    </main>
 
     <!-- ========================================== -->
     <!-- INSTALACE MONITORŮ CASE STUDY PAGE         -->
     <!-- ========================================== -->
-    <div id="instalace-monitoru-page" class="page-content min-h-screen pt-32 pb-24">
+    <main id="instalace-monitoru-page" class="page-content min-h-screen pt-32 pb-24">
         <section class="max-w-4xl mx-auto px-6 text-center mb-24">
             <div class="inline-block px-4 py-1 rounded-full border border-[#00ea9a]/30 text-[#00ea9a] text-xs font-bold mb-6 tracking-widest uppercase cursor-pointer hover:bg-[#00ea9a]/10 transition" onclick="showPage('home'); window.scrollTo({top: 0, behavior: 'instant'});">← Zpět na přehled</div>
             <h1 class="text-4xl md:text-6xl font-bold mb-6">Instalace <span class="gradient-text">monitorů</span></h1>
             <p class="text-xl text-slate-400 max-w-3xl mx-auto">400 monitorů za 2 dny — kompletní realizace na klíč.</p>
         </section>
-    </div>
+    </main>
 
     <!-- Patička -->
     <footer class="py-12 border-t border-white/5 text-slate-500">
@@ -693,11 +693,11 @@
 
     <!-- Lightbox Modal -->
     <div id="lightbox" class="fixed inset-0 z-[100] bg-slate-900/95 hidden flex-col justify-center items-center opacity-0 transition-opacity duration-300 backdrop-blur-md" onclick="closeLightbox()">
-        <button type="button" class="absolute top-6 right-6 text-white hover:text-[#00ea9a] transition text-5xl font-light" onclick="closeLightbox()">&times;</button>
+        <button class="absolute top-6 right-6 text-white hover:text-[#00ea9a] transition text-5xl font-light" onclick="closeLightbox()">&times;</button>
         <div class="relative max-w-[95vw] max-h-[85vh] flex flex-col items-center" onclick="event.stopPropagation()">
-            <img id="lightbox-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="Náhled fotky" class="max-w-full max-h-[75vh] rounded-xl shadow-2xl object-contain transition-transform duration-300 scale-95">
+            <img id="lightbox-img" src="" alt="Náhled fotky" class="max-w-full max-h-[75vh] rounded-xl shadow-2xl object-contain transition-transform duration-300 scale-95">
             <div id="lightbox-caption" class="text-white text-center mt-6">
-                <p id="lightbox-title" class="text-2xl font-bold"></p>
+                <h4 id="lightbox-title" class="text-2xl font-bold"></h4>
                 <p id="lightbox-desc" class="text-[#00ea9a] text-sm mt-2 tracking-wide uppercase"></p>
             </div>
         </div>
